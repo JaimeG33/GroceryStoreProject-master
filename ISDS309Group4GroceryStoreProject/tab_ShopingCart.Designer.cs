@@ -1,6 +1,6 @@
 ﻿namespace ISDS309Group4GroceryStoreProject
 {
-    partial class Tab_Admin
+    partial class tab_ShopingCart
     {
         /// <summary>
         /// Required designer variable.
@@ -29,48 +29,54 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            label2 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(32, 39);
+            label1.Anchor = AnchorStyles.Top;
+            label1.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(540, 19);
             label1.Name = "label1";
-            label1.Size = new Size(274, 45);
-            label1.TabIndex = 0;
-            label1.Text = "Welcome Admin!";
+            label1.Size = new Size(200, 38);
+            label1.TabIndex = 2;
+            label1.Text = "Shopping Cart";
+            label1.TextAlign = ContentAlignment.TopCenter;
+            label1.Click += label1_Click;
             // 
-            // label2
+            // button1
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(617, 43);
-            label2.Name = "label2";
-            label2.Size = new Size(193, 41);
-            label2.TabIndex = 1;
-            label2.Text = "Transactions";
+            button1.BackColor = Color.FromArgb(255, 128, 128);
+            button1.Cursor = Cursors.Hand;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ControlText;
+            button1.Location = new Point(12, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(173, 52);
+            button1.TabIndex = 1;
+            button1.Text = "Home";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // Tab_Admin
+            // tab_ShopingCart
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1208, 692);
-            Controls.Add(label2);
+            ClientSize = new Size(1190, 645);
+            Controls.Add(button1);
             Controls.Add(label1);
             MaximumSize = new Size(1208, 692);
             MinimumSize = new Size(1208, 692);
-            Name = "Tab_Admin";
+            Name = "tab_ShopingCart";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Admin";
-            Load += Tab_Admin_Load;
+            Text = "Shopping Cart";
+            Load += tab_ShopingCart_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Label label1;
-        private Label label2;
+        private Button button1;
     }
 }

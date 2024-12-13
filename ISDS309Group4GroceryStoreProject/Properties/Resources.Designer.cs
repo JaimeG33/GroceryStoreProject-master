@@ -63,6 +63,16 @@ namespace ISDS309Group4GroceryStoreProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blackmesagrocerylogo {
+            get {
+                object obj = ResourceManager.GetObject("blackmesagrocerylogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blankpage {
             get {
                 object obj = ResourceManager.GetObject("blankpage", resourceCulture);
@@ -106,6 +116,16 @@ namespace ISDS309Group4GroceryStoreProject.Properties {
         internal static System.Drawing.Bitmap Logo {
             get {
                 object obj = ResourceManager.GetObject("Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopping_cart {
+            get {
+                object obj = ResourceManager.GetObject("shopping_cart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

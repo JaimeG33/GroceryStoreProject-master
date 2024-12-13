@@ -86,5 +86,23 @@ namespace ISDS309Group4GroceryStoreProject
         {
 
         }
+
+        private void shopingCart_Click(object sender, EventArgs e)
+        {
+            //Exit curent tab
+            this.Hide();
+            //Then open new tab
+            tab_ShopingCart tab_Shoping = new tab_ShopingCart();
+            //.Show = open new tab, (can alt tab to others)
+            //.ShowDialog = open new tab but you can't eddit others while its open
+            tab_Shoping.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Tab_Home tab_Home = new Tab_Home();
+            tab_Home.ShowDialog();
+        }
     }
 }

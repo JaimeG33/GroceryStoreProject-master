@@ -35,71 +35,79 @@
             tabProduce = new Button();
             tabMeat = new Button();
             pictureBox1 = new PictureBox();
+            button1 = new Button();
+            shopingCart = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // tabDrinks
             // 
+            tabDrinks.Cursor = Cursors.Hand;
             tabDrinks.Location = new Point(1037, 114);
             tabDrinks.Margin = new Padding(3, 4, 3, 4);
             tabDrinks.Name = "tabDrinks";
             tabDrinks.Size = new Size(143, 33);
-            tabDrinks.TabIndex = 12;
+            tabDrinks.TabIndex = 7;
             tabDrinks.Text = "Drinks";
             tabDrinks.UseVisualStyleBackColor = true;
             tabDrinks.Click += tabDrinks_Click;
             // 
             // tabSnacks
             // 
+            tabSnacks.Cursor = Cursors.Hand;
             tabSnacks.Location = new Point(839, 114);
             tabSnacks.Margin = new Padding(3, 4, 3, 4);
             tabSnacks.Name = "tabSnacks";
             tabSnacks.Size = new Size(143, 33);
-            tabSnacks.TabIndex = 11;
+            tabSnacks.TabIndex = 6;
             tabSnacks.Text = "Snacks and Candy";
             tabSnacks.UseVisualStyleBackColor = true;
             tabSnacks.Click += tabSnacks_Click;
             // 
             // tabBakery
             // 
+            tabBakery.Cursor = Cursors.Hand;
             tabBakery.Location = new Point(645, 114);
             tabBakery.Margin = new Padding(3, 4, 3, 4);
             tabBakery.Name = "tabBakery";
             tabBakery.Size = new Size(143, 33);
-            tabBakery.TabIndex = 10;
+            tabBakery.TabIndex = 5;
             tabBakery.Text = "Bakery";
             tabBakery.UseVisualStyleBackColor = true;
             tabBakery.Click += tabBakery_Click;
             // 
             // tabDairy
             // 
+            tabDairy.Cursor = Cursors.Hand;
             tabDairy.Location = new Point(438, 114);
             tabDairy.Margin = new Padding(3, 4, 3, 4);
             tabDairy.Name = "tabDairy";
             tabDairy.Size = new Size(143, 33);
-            tabDairy.TabIndex = 9;
+            tabDairy.TabIndex = 4;
             tabDairy.Text = "Dairy";
             tabDairy.UseVisualStyleBackColor = true;
             tabDairy.Click += tabDairy_Click;
             // 
             // tabProduce
             // 
+            tabProduce.Cursor = Cursors.Hand;
             tabProduce.Location = new Point(240, 114);
             tabProduce.Margin = new Padding(3, 4, 3, 4);
             tabProduce.Name = "tabProduce";
             tabProduce.Size = new Size(143, 33);
-            tabProduce.TabIndex = 8;
+            tabProduce.TabIndex = 3;
             tabProduce.Text = "Produce";
             tabProduce.UseVisualStyleBackColor = true;
             tabProduce.Click += tabProduce_Click;
             // 
             // tabMeat
             // 
+            tabMeat.Cursor = Cursors.Hand;
             tabMeat.Location = new Point(27, 114);
             tabMeat.Margin = new Padding(3, 4, 3, 4);
             tabMeat.Name = "tabMeat";
             tabMeat.Size = new Size(143, 33);
-            tabMeat.TabIndex = 7;
+            tabMeat.TabIndex = 2;
             tabMeat.Text = "Meat";
             tabMeat.UseVisualStyleBackColor = true;
             tabMeat.Click += tabMeat_Click;
@@ -115,11 +123,38 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.Control;
+            button1.BackgroundImage = Properties.Resources.blackmesagrocerylogo;
+            button1.Cursor = Cursors.Hand;
+            button1.Location = new Point(27, -1);
+            button1.Name = "button1";
+            button1.Size = new Size(265, 103);
+            button1.TabIndex = 1;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // shopingCart
+            // 
+            shopingCart.BackgroundImage = Properties.Resources.shopping_cart;
+            shopingCart.BackgroundImageLayout = ImageLayout.Stretch;
+            shopingCart.Cursor = Cursors.Hand;
+            shopingCart.Location = new Point(1085, 1);
+            shopingCart.Margin = new Padding(3, 4, 3, 4);
+            shopingCart.Name = "shopingCart";
+            shopingCart.Size = new Size(100, 100);
+            shopingCart.TabIndex = 8;
+            shopingCart.UseVisualStyleBackColor = true;
+            shopingCart.Click += shopingCart_Click;
+            // 
             // Tab_Drinks
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1190, 645);
+            Controls.Add(shopingCart);
+            Controls.Add(button1);
             Controls.Add(tabDrinks);
             Controls.Add(tabSnacks);
             Controls.Add(tabBakery);
@@ -128,6 +163,8 @@
             Controls.Add(tabMeat);
             Controls.Add(pictureBox1);
             Margin = new Padding(3, 4, 3, 4);
+            MaximumSize = new Size(1208, 692);
+            MinimumSize = new Size(1208, 692);
             Name = "Tab_Drinks";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Drinks";
@@ -146,5 +183,7 @@
         private Button tabProduce;
         private Button tabMeat;
         private PictureBox pictureBox1;
+        private Button button1;
+        private Button shopingCart;
     }
 }
