@@ -66,6 +66,7 @@
             label1.Size = new Size(93, 27);
             label1.TabIndex = 1;
             label1.Text = "Username: ";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -78,6 +79,7 @@
             label2.Size = new Size(94, 27);
             label2.TabIndex = 2;
             label2.Text = "Password:";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // textBox1
             // 
