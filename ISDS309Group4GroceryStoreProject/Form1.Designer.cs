@@ -42,16 +42,15 @@
             // 
             button1.Anchor = AnchorStyles.Right;
             button1.AutoSize = true;
-            button1.BackColor = Color.YellowGreen;
+            button1.BackColor = Color.NavajoWhite;
             button1.BackgroundImageLayout = ImageLayout.Center;
             button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(724, 266);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.MaximumSize = new Size(100, 80);
-            button1.MinimumSize = new Size(100, 80);
+            button1.Location = new Point(780, 281);
+            button1.MaximumSize = new Size(88, 60);
+            button1.MinimumSize = new Size(88, 60);
             button1.Name = "button1";
-            button1.Size = new Size(100, 80);
+            button1.Size = new Size(88, 60);
             button1.TabIndex = 3;
             button1.Text = "LOGIN";
             button1.UseVisualStyleBackColor = false;
@@ -61,9 +60,9 @@
             // 
             label1.Anchor = AnchorStyles.Right;
             label1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(413, 269);
+            label1.Location = new Point(510, 281);
             label1.Name = "label1";
-            label1.Size = new Size(93, 27);
+            label1.Size = new Size(81, 27);
             label1.TabIndex = 1;
             label1.Text = "Username: ";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -74,9 +73,9 @@
             label2.BackColor = SystemColors.Control;
             label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(413, 315);
+            label2.Location = new Point(510, 314);
             label2.Name = "label2";
-            label2.Size = new Size(94, 27);
+            label2.Size = new Size(81, 27);
             label2.TabIndex = 2;
             label2.Text = "Password:";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -85,22 +84,24 @@
             // 
             textBox1.Anchor = AnchorStyles.Right;
             textBox1.Cursor = Cursors.IBeam;
-            textBox1.Location = new Point(521, 270);
-            textBox1.MaximumSize = new Size(178, 27);
-            textBox1.MinimumSize = new Size(178, 27);
+            textBox1.Location = new Point(605, 281);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
+            textBox1.MaximumSize = new Size(156, 27);
+            textBox1.MinimumSize = new Size(156, 27);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(178, 27);
+            textBox1.Size = new Size(156, 27);
             textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
             textBox2.Anchor = AnchorStyles.Right;
             textBox2.Cursor = Cursors.IBeam;
-            textBox2.Location = new Point(521, 316);
-            textBox2.MaximumSize = new Size(178, 27);
-            textBox2.MinimumSize = new Size(178, 27);
+            textBox2.Location = new Point(605, 314);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
+            textBox2.MaximumSize = new Size(156, 27);
+            textBox2.MinimumSize = new Size(156, 27);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(178, 27);
+            textBox2.Size = new Size(156, 27);
             textBox2.TabIndex = 2;
             // 
             // imageList1
@@ -114,25 +115,24 @@
             label3.BackColor = Color.White;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Red;
-            label3.Location = new Point(413, 356);
+            label3.Location = new Point(510, 347);
             label3.Name = "label3";
-            label3.Size = new Size(409, 32);
+            label3.Size = new Size(358, 24);
             label3.TabIndex = 5;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.loginbackground1;
             BackgroundImageLayout = ImageLayout.None;
-            ClientSize = new Size(1190, 645);
+            ClientSize = new Size(1192, 653);
             Controls.Add(label3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
-            Margin = new Padding(3, 4, 3, 4);
             MaximumSize = new Size(1208, 692);
             MinimumSize = new Size(1208, 692);
             Name = "Login";

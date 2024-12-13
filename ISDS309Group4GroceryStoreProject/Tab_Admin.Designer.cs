@@ -35,9 +35,9 @@
             // label1
             // 
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(32, 39);
+            label1.Location = new Point(28, 29);
             label1.Name = "label1";
-            label1.Size = new Size(274, 45);
+            label1.Size = new Size(240, 34);
             label1.TabIndex = 0;
             label1.Text = "Welcome Admin!";
             // 
@@ -45,19 +45,20 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(617, 43);
+            label2.Location = new Point(540, 32);
             label2.Name = "label2";
-            label2.Size = new Size(193, 41);
+            label2.Size = new Size(157, 32);
             label2.TabIndex = 1;
             label2.Text = "Transactions";
             // 
             // Tab_Admin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1208, 692);
+            ClientSize = new Size(1192, 653);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             MaximumSize = new Size(1208, 692);
             MinimumSize = new Size(1208, 692);
             Name = "Tab_Admin";

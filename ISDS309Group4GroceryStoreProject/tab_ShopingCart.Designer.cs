@@ -36,9 +36,9 @@
             // 
             label1.Anchor = AnchorStyles.Top;
             label1.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(540, 19);
+            label1.Location = new Point(547, 14);
             label1.Name = "label1";
-            label1.Size = new Size(200, 38);
+            label1.Size = new Size(175, 28);
             label1.TabIndex = 2;
             label1.Text = "Shopping Cart";
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -50,9 +50,10 @@
             button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ControlText;
-            button1.Location = new Point(12, 12);
+            button1.Location = new Point(10, 9);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(173, 52);
+            button1.Size = new Size(151, 39);
             button1.TabIndex = 1;
             button1.Text = "Home";
             button1.UseVisualStyleBackColor = false;
@@ -60,11 +61,12 @@
             // 
             // tab_ShopingCart
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1190, 645);
+            ClientSize = new Size(1192, 653);
             Controls.Add(button1);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             MaximumSize = new Size(1208, 692);
             MinimumSize = new Size(1208, 692);
             Name = "tab_ShopingCart";
