@@ -37,7 +37,25 @@
             pictureBox1 = new PictureBox();
             button1 = new Button();
             shopingCart = new Button();
+            pbxCookies = new PictureBox();
+            pbxPie = new PictureBox();
+            pbxCake = new PictureBox();
+            pbxFlour = new PictureBox();
+            pbxWheatB = new PictureBox();
+            pbxWhiteB = new PictureBox();
+            lblFlour = new Label();
+            lblCookies = new Label();
+            lblPie = new Label();
+            lblCake = new Label();
+            lblWheatB = new Label();
+            lblWhiteB = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxCookies).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxPie).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxCake).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxFlour).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxWheatB).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxWhiteB).BeginInit();
             SuspendLayout();
             // 
             // tabDrinks
@@ -141,11 +159,149 @@
             shopingCart.UseVisualStyleBackColor = true;
             shopingCart.Click += shopingCart_Click;
             // 
+            // pbxCookies
+            // 
+            pbxCookies.BackColor = Color.Transparent;
+            pbxCookies.Image = Properties.Resources.Cookies;
+            pbxCookies.Location = new Point(625, 228);
+            pbxCookies.Name = "pbxCookies";
+            pbxCookies.Size = new Size(125, 124);
+            pbxCookies.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxCookies.TabIndex = 28;
+            pbxCookies.TabStop = false;
+            // 
+            // pbxPie
+            // 
+            pbxPie.BackColor = Color.Transparent;
+            pbxPie.Image = Properties.Resources.Apple_Pie;
+            pbxPie.Location = new Point(829, 228);
+            pbxPie.Name = "pbxPie";
+            pbxPie.Size = new Size(125, 124);
+            pbxPie.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxPie.TabIndex = 29;
+            pbxPie.TabStop = false;
+            // 
+            // pbxCake
+            // 
+            pbxCake.BackColor = Color.Transparent;
+            pbxCake.Image = Properties.Resources.Cake;
+            pbxCake.Location = new Point(1033, 228);
+            pbxCake.Name = "pbxCake";
+            pbxCake.Size = new Size(125, 124);
+            pbxCake.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxCake.TabIndex = 30;
+            pbxCake.TabStop = false;
+            // 
+            // pbxFlour
+            // 
+            pbxFlour.BackColor = Color.Transparent;
+            pbxFlour.Image = Properties.Resources.Flour;
+            pbxFlour.Location = new Point(433, 228);
+            pbxFlour.Name = "pbxFlour";
+            pbxFlour.Size = new Size(125, 124);
+            pbxFlour.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxFlour.TabIndex = 31;
+            pbxFlour.TabStop = false;
+            // 
+            // pbxWheatB
+            // 
+            pbxWheatB.BackColor = Color.Transparent;
+            pbxWheatB.Image = Properties.Resources.Wheat_Bread;
+            pbxWheatB.Location = new Point(230, 228);
+            pbxWheatB.Name = "pbxWheatB";
+            pbxWheatB.Size = new Size(125, 124);
+            pbxWheatB.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxWheatB.TabIndex = 32;
+            pbxWheatB.TabStop = false;
+            // 
+            // pbxWhiteB
+            // 
+            pbxWhiteB.BackColor = Color.Transparent;
+            pbxWhiteB.Image = Properties.Resources.White_Bread;
+            pbxWhiteB.Location = new Point(33, 228);
+            pbxWhiteB.Name = "pbxWhiteB";
+            pbxWhiteB.Size = new Size(125, 124);
+            pbxWhiteB.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxWhiteB.TabIndex = 33;
+            pbxWhiteB.TabStop = false;
+            // 
+            // lblFlour
+            // 
+            lblFlour.AutoSize = true;
+            lblFlour.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblFlour.Location = new Point(461, 355);
+            lblFlour.Name = "lblFlour";
+            lblFlour.Size = new Size(59, 30);
+            lblFlour.TabIndex = 34;
+            lblFlour.Text = "Flour";
+            // 
+            // lblCookies
+            // 
+            lblCookies.AutoSize = true;
+            lblCookies.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCookies.Location = new Point(641, 355);
+            lblCookies.Name = "lblCookies";
+            lblCookies.Size = new Size(85, 30);
+            lblCookies.TabIndex = 35;
+            lblCookies.Text = "Cookies";
+            // 
+            // lblPie
+            // 
+            lblPie.AutoSize = true;
+            lblPie.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblPie.Location = new Point(841, 355);
+            lblPie.Name = "lblPie";
+            lblPie.Size = new Size(101, 30);
+            lblPie.TabIndex = 36;
+            lblPie.Text = "Apple Pie";
+            // 
+            // lblCake
+            // 
+            lblCake.AutoSize = true;
+            lblCake.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCake.Location = new Point(1062, 355);
+            lblCake.Name = "lblCake";
+            lblCake.Size = new Size(58, 30);
+            lblCake.TabIndex = 37;
+            lblCake.Text = "Cake";
+            // 
+            // lblWheatB
+            // 
+            lblWheatB.AutoSize = true;
+            lblWheatB.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblWheatB.Location = new Point(222, 355);
+            lblWheatB.Name = "lblWheatB";
+            lblWheatB.Size = new Size(133, 30);
+            lblWheatB.TabIndex = 38;
+            lblWheatB.Text = "Wheat Bread";
+            // 
+            // lblWhiteB
+            // 
+            lblWhiteB.AutoSize = true;
+            lblWhiteB.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblWhiteB.Location = new Point(33, 355);
+            lblWhiteB.Name = "lblWhiteB";
+            lblWhiteB.Size = new Size(127, 30);
+            lblWhiteB.TabIndex = 39;
+            lblWhiteB.Text = "White Bread";
+            // 
             // Tab_Bakery
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1192, 653);
+            Controls.Add(lblWhiteB);
+            Controls.Add(lblWheatB);
+            Controls.Add(lblCake);
+            Controls.Add(lblPie);
+            Controls.Add(lblCookies);
+            Controls.Add(lblFlour);
+            Controls.Add(pbxWhiteB);
+            Controls.Add(pbxWheatB);
+            Controls.Add(pbxFlour);
+            Controls.Add(pbxCake);
+            Controls.Add(pbxPie);
+            Controls.Add(pbxCookies);
             Controls.Add(shopingCart);
             Controls.Add(button1);
             Controls.Add(tabDrinks);
@@ -163,7 +319,14 @@
             FormClosed += Tab_Bakery_FormClosed;
             Load += Tab_Bakery_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxCookies).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxPie).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxCake).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxFlour).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxWheatB).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxWhiteB).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -177,5 +340,17 @@
         private PictureBox pictureBox1;
         private Button button1;
         private Button shopingCart;
+        private PictureBox pbxCookies;
+        private PictureBox pbxPie;
+        private PictureBox pbxCake;
+        private PictureBox pbxFlour;
+        private PictureBox pbxWheatB;
+        private PictureBox pbxWhiteB;
+        private Label lblFlour;
+        private Label lblCookies;
+        private Label lblPie;
+        private Label lblCake;
+        private Label lblWheatB;
+        private Label lblWhiteB;
     }
 }
