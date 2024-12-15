@@ -30,6 +30,9 @@
         {
             label1 = new Label();
             button1 = new Button();
+            listOfItemsInCart = new ListBox();
+            listOfPricesinCart = new ListBox();
+            listOfQuantInCart = new ListBox();
             SuspendLayout();
             // 
             // label1
@@ -59,11 +62,47 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // listOfItemsInCart
+            // 
+            listOfItemsInCart.BackColor = SystemColors.AppWorkspace;
+            listOfItemsInCart.FormattingEnabled = true;
+            listOfItemsInCart.ItemHeight = 15;
+            listOfItemsInCart.Location = new Point(219, 254);
+            listOfItemsInCart.Name = "listOfItemsInCart";
+            listOfItemsInCart.Size = new Size(198, 184);
+            listOfItemsInCart.TabIndex = 4;
+            listOfItemsInCart.SelectedIndexChanged += listOfItemsInCart_SelectedIndexChanged;
+            // 
+            // listOfPricesinCart
+            // 
+            listOfPricesinCart.BackColor = SystemColors.AppWorkspace;
+            listOfPricesinCart.FormattingEnabled = true;
+            listOfPricesinCart.ItemHeight = 15;
+            listOfPricesinCart.Location = new Point(423, 254);
+            listOfPricesinCart.Name = "listOfPricesinCart";
+            listOfPricesinCart.Size = new Size(76, 184);
+            listOfPricesinCart.TabIndex = 6;
+            listOfPricesinCart.SelectedIndexChanged += listOfPricesinCart_SelectedIndexChanged;
+            // 
+            // listOfQuantInCart
+            // 
+            listOfQuantInCart.BackColor = SystemColors.AppWorkspace;
+            listOfQuantInCart.FormattingEnabled = true;
+            listOfQuantInCart.ItemHeight = 15;
+            listOfQuantInCart.Location = new Point(505, 254);
+            listOfQuantInCart.Name = "listOfQuantInCart";
+            listOfQuantInCart.Size = new Size(76, 184);
+            listOfQuantInCart.TabIndex = 7;
+            listOfQuantInCart.SelectedIndexChanged += listOfQuantInCart_SelectedIndexChanged;
+            // 
             // tab_ShopingCart
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1192, 653);
+            Controls.Add(listOfQuantInCart);
+            Controls.Add(listOfPricesinCart);
+            Controls.Add(listOfItemsInCart);
             Controls.Add(button1);
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
@@ -72,6 +111,7 @@
             Name = "tab_ShopingCart";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Shopping Cart";
+            FormClosed += tab_ShopingCart_FormClosed;
             Load += tab_ShopingCart_Load;
             ResumeLayout(false);
         }
@@ -80,5 +120,8 @@
 
         private Label label1;
         private Button button1;
+        private ListBox listOfItemsInCart;
+        private ListBox listOfPricesinCart;
+        private ListBox listOfQuantInCart;
     }
 }

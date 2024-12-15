@@ -36,6 +36,7 @@
             tabSnacks = new Button();
             tabBakery = new Button();
             button1 = new Button();
+            addToCartTest = new Button();
             SuspendLayout();
             // 
             // tabMeat
@@ -136,6 +137,16 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // addToCartTest
+            // 
+            addToCartTest.Location = new Point(100, 364);
+            addToCartTest.Name = "addToCartTest";
+            addToCartTest.Size = new Size(98, 23);
+            addToCartTest.TabIndex = 10;
+            addToCartTest.Text = "Add to Cart";
+            addToCartTest.UseVisualStyleBackColor = true;
+            addToCartTest.Click += addToCartTest_Click;
+            // 
             // Tab_Home
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -143,6 +154,7 @@
             BackgroundImage = Properties.Resources.homepage;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(1192, 653);
+            Controls.Add(addToCartTest);
             Controls.Add(button1);
             Controls.Add(tabDrinks);
             Controls.Add(tabSnacks);
@@ -174,5 +186,6 @@
         private Button tabSnacks;
         private Button tabBakery;
         private Button button1;
+        private Button addToCartTest;
     }
 }

@@ -69,7 +69,8 @@ namespace ISDS309Group4GroceryStoreProject
     //Open stream writer to write on the file ^
     StreamWriter writer = new StreamWriter(outFile);
 
-    writer.WriteLine("This is a list of all the inventory available: ");
+    writer.WriteLine("This is a list of all the inventory available: \n" +
+        "Item, Price, Quantity in Cart");
 
     while (row < invListLength)
     {
@@ -108,7 +109,11 @@ namespace ISDS309Group4GroceryStoreProject
             //Create Users folder
             path = Path.Combine(dataFolder, "UserInfo");
             Directory.CreateDirectory(path);
-            //in case we pursue the optional creating accounts
+
+                path = Path.Combine(path, "Curent User Purchase.txt");
+                outFile = new FileStream(path, 
+                    FileMode.Create);
+                outFile.Close();
 
 
 }
@@ -119,67 +124,66 @@ namespace ISDS309Group4GroceryStoreProject
 
      public string[,] invList =
      {
-         {"Ground Beef", "3.00", "Health"},
-         {"Ribs", "12.50", "NoDiscount"}, 
-         {"Chicken Breast", "3.00", "Health"}, 
-         {"Salmon", "2.50", "Health"}, 
-         {"Bass", "3.25", "NoDiscount"}, 
-         {"Tuna", "2.50", "Health"}, 
-         {"Tri-Tip Stealk", "20.00", "NoDiscount"}, 
-         {"Pork", "2.75", "NoDiscount"}, 
+         {"Ground Beef", "3.00", "0"},//0 Meat Section
+         {"Ribs", "12.50", "0"}, 
+         {"Chicken Breast", "3.00", "0"}, 
+         {"Salmon", "2.50", "0"}, 
+         {"Bass", "3.25", "0"}, 
+         {"Tuna", "2.50", "0"}, 
+         {"Tri-Tip Stealk", "20.00", "0"}, 
+         {"Pork", "2.75", "0"}, //7
 
-         {"12 Eggs", "3.25", "Health"}, 
-         {"Carrots", "1.50", "Health"}, 
-         {"Brocoli", "1.25", "Health"}, 
-         {"Lettuce", "1.25", "Health"}, 
-         {"Cabbage", "1.50", "Health"}, 
-         {"Kale", "2.00", "Health"}, 
-         {"Green Apple", "0.75", "Health"}, 
-         {"Red Apple", "0.75", "Health"}, 
-         {"Yellow Apple", "0.75", "Health"}, 
-         {"Bell Pepper", "1.25", "NoDiscount"}, 
-         {"Pear", "1.00", "Health"}, 
-         {"Bannana", "1.00", "Health"}, 
-         {"Orange", "1.25", "Health"}, 
+         {"12 Eggs", "3.25", "0"}, //8 Produce Section
+         {"Carrots", "1.50", "0"}, 
+         {"Brocoli", "1.25", "0"}, 
+         {"Lettuce", "1.25", "0"}, 
+         {"Cabbage", "1.50", "0"}, 
+         {"Kale", "2.00", "0"}, 
+         {"Green Apple", "0.75", "0"}, 
+         {"Red Apple", "0.75", "0"}, 
+         {"Yellow Apple", "0.75", "0"}, 
+         {"Bell Pepper", "1.25", "0"}, 
+         {"Pear", "1.00", "0"}, 
+         {"Bannana", "1.00", "0"}, 
+         {"Orange", "1.25", "0"}, //20
 
-         {"Milk Galon", "3.50", "Health"}, 
-         {"Milk Half-Gallon", "2.00", "Health"}, 
-         {"Cheese (Chedar)", "1.50", "NoDiscount"}, 
-         {"Cheese (Mozzarella)", "1.25", "NoDiscount"}, 
-         {"Yogurt", "0.75", "Health"}, 
-         {"Butter", "1.50", "NoDiscount"}, 
-         {"Whipped Cream", "1.00", "NoDiscount"}, 
+         {"Milk Galon", "3.50", "0"}, //21 Dairy Section
+         {"Milk Half-Gallon", "2.00", "0"}, 
+         {"Cheese (Chedar)", "1.50", "0"}, 
+         {"Cheese (Mozzarella)", "1.25", "0"}, 
+         {"Yogurt", "0.75", "0"}, 
+         {"Butter", "1.50", "0"}, 
+         {"Whipped Cream", "1.00", "0"}, //27
 
-         {"White Bread", "2.75", "NoDiscount"}, 
-         {"Wheat Bread", "2.50", "Health"}, 
-         {"Flour", "1.50", "NoDiscount"}, 
-         {"12 Cookies", "4.75", "NoDiscount"}, 
-         {"Pumpkin Pie", "6.50", "NoDiscount"}, 
-         {"Apple Pie", "6.50", "NoDiscount"}, 
-         {"Chocolate Cake", "15.00", "NoDiscount"}, 
-         {"Birthday Cake", "16.50", "NoDiscount"}, 
+         {"White Bread", "2.75", "0"}, //28 Bakery Section
+         {"Wheat Bread", "2.50", "0"}, 
+         {"Flour", "1.50", "0"}, 
+         {"12 Cookies", "4.75", "0"}, 
+         {"Pumpkin Pie", "6.50", "0"}, 
+         {"Apple Pie", "6.50", "0"}, 
+         {"Chocolate Cake", "15.00", "0"}, 
+         {"Birthday Cake", "16.50", "0"}, //35
 
-         {"Large Lays Chips", "4.50", "NoDiscount"}, 
-         {"Large Takis", "4.75", "NoDiscount"}, 
-         {"Chip Pack (Variety)", "12.50", "NoDiscount"}, 
-         {"Chocolate Bar", "1.50", "NoDiscount"}, 
-         {"Loli Pop Packets", "5.00", "NoDiscount"}, 
-         {"Ramen", "0.50", "NoDiscount"}, 
-         {"Candy Variety Pack", "15.00", "NoDiscount"}, 
+         {"Large Lays Chips", "4.50", "0"}, //36 Snacks Section
+         {"Large Takis", "4.75", "0"}, 
+         {"Chip Pack (Variety)", "12.50", "0"}, //38
+         {"Chocolate Bar", "1.50", "0"}, 
+         {"Loli Pop Packets", "5.00", "0"}, 
+         {"Ramen", "0.50", "0"}, 
+         {"Candy Variety Pack", "15.00", "0"}, //42
 
-         {"12oz Coke", "3.00", "NoDiscount"}, 
-         {"12oz Sprite", "3.00", "NoDiscount"}, 
-         {"24 Pack Coke", "8.00", "NoDiscount"}, 
-         {"24 Pack Sprite", "8.00", "NoDiscount"}, 
-         {"Soda Variety Pack", "7.50", "NoDiscount"}, 
-         {"12 Pack Beer", "10.00", "NoDiscount"}, 
-         {"Whiskey", "14.00", "NoDiscount"}, 
-         {"Champagne", "16.00", "NoDiscount"}, 
-         {"24 Pack Waters", "5.00", "Health"}, 
+         {"12oz Coke", "3.00", "0"}, //43 Drinks Section
+         {"12oz Sprite", "3.00", "0"}, 
+         {"24 Pack Coke", "8.00", "0"}, 
+         {"24 Pack Sprite", "8.00", "0"}, 
+         {"Soda Variety Pack", "7.50", "0"}, 
+         {"12 Pack Beer", "10.00", "0"}, 
+         {"Whiskey", "14.00", "0"}, 
+         {"Champagne", "16.00", "0"}, 
+         {"24 Pack Waters", "5.00", "0"}, //51
      };
-
-
  }
+
 
         private void Tab_Admin_FormClosed(object sender, FormClosedEventArgs e)
         {

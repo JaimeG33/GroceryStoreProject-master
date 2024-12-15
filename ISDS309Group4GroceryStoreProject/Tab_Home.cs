@@ -20,7 +20,8 @@ namespace ISDS309Group4GroceryStoreProject
 
         private void Tab_Home_Load(object sender, EventArgs e)
         {
-
+           
+            
         }
 
         private void tabMeat_Click(object sender, EventArgs e)
@@ -78,10 +79,7 @@ namespace ISDS309Group4GroceryStoreProject
 
         }
 
-        private void resizeControl(Rectangle r, Control c)
-        {
 
-        }
         private void Tab_Home_Resize(object sender, EventArgs e)
         {
 
@@ -103,6 +101,74 @@ namespace ISDS309Group4GroceryStoreProject
             this.Hide();
             Tab_Home tab_Home = new Tab_Home();
             tab_Home.ShowDialog();
+            this.Close();
+        }
+
+        //Shopping Cart Section
+        public class InShoppingCart
+        {
+            public string[] addToShopCart = new string[3];
+            public int quantity = 1, totalQuantity = 0;
+        }
+        public class Paths
+        {
+            public string pathToStore = Path.Combine("ProjectData", "UserInfo", "Curent User Purchase.txt");
+            public string pathRead = Path.Combine("ProjectData", "Inventory.txt");
+        }
+        private void addToCartTest_Click(object sender, EventArgs e)
+        {
+            string recordIn, item = "Chip Pack (Variety),12.50,0";
+            char DELIM = ',';
+            
+            Paths paths = new Paths();
+            InShoppingCart inShoppingCart = new InShoppingCart();
+
+            //Read inventory to scan/store item info
+            FileStream inFile = new FileStream(paths.pathRead,
+                FileMode.Open, FileAccess.Read);
+            //Open stream reader to read the file ^
+            StreamReader reader = new StreamReader(inFile);
+            //Start at the top of the file
+            inFile.Seek(0, SeekOrigin.Begin);
+            //read 1 line of the file
+            recordIn = reader.ReadLine();
+            //keep reading until file is done
+            while (recordIn != null)
+            {
+                //record info when match is found
+                if (recordIn == item)//replace this part for each button
+                {
+                    string[] fields = recordIn.Split(DELIM);
+                    inShoppingCart.addToShopCart[0] = fields[0];
+                    inShoppingCart.addToShopCart[1] = fields[1];
+                    inShoppingCart.addToShopCart[2] = Convert.ToString(inShoppingCart.quantity);
+                }
+                recordIn = reader.ReadLine();
+            }
+            reader.Close();
+            inFile.Close();
+            inShoppingCart.quantity = 1;          
+
+                //now record everything on the Curent User Purchase file
+                FileStream outFile = new FileStream(paths.pathToStore,
+                FileMode.Append, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(outFile);
+                // Write all items added to the cart
+                writer.WriteLine("{0},{1},{2}",
+                    inShoppingCart.addToShopCart[0],
+                    inShoppingCart.addToShopCart[1],
+                    inShoppingCart.addToShopCart[2]);
+
+            writer.Close();
+            outFile.Close();
+        }
+        private void amountToCartTest_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //Make sure only numbers can be entered
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Stop the character from being entered
+            }
         }
     }
 }
