@@ -37,7 +37,25 @@
             pictureBox1 = new PictureBox();
             button1 = new Button();
             shopingCart = new Button();
+            pbxSteak = new PictureBox();
+            pbxRibs = new PictureBox();
+            pbxPork = new PictureBox();
+            pbxGroundBeef = new PictureBox();
+            pbxChicken = new PictureBox();
+            pbxSalmon = new PictureBox();
+            lblSteak = new Label();
+            lblSalmon = new Label();
+            lblRibs = new Label();
+            lblChicken = new Label();
+            lblGroundBeef = new Label();
+            lblPork = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxSteak).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxRibs).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxPork).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxGroundBeef).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxChicken).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxSalmon).BeginInit();
             SuspendLayout();
             // 
             // tabDrinks
@@ -131,6 +149,7 @@
             // 
             // shopingCart
             // 
+            shopingCart.BackColor = Color.White;
             shopingCart.BackgroundImage = Properties.Resources.shopping_cart;
             shopingCart.BackgroundImageLayout = ImageLayout.Stretch;
             shopingCart.Cursor = Cursors.Hand;
@@ -138,8 +157,140 @@
             shopingCart.Name = "shopingCart";
             shopingCart.Size = new Size(88, 75);
             shopingCart.TabIndex = 8;
-            shopingCart.UseVisualStyleBackColor = true;
+            shopingCart.UseVisualStyleBackColor = false;
             shopingCart.Click += shopingCart_Click_1;
+            // 
+            // pbxSteak
+            // 
+            pbxSteak.BackColor = Color.Transparent;
+            pbxSteak.Image = Properties.Resources.steak;
+            pbxSteak.Location = new Point(24, 216);
+            pbxSteak.Name = "pbxSteak";
+            pbxSteak.Size = new Size(125, 124);
+            pbxSteak.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxSteak.TabIndex = 15;
+            pbxSteak.TabStop = false;
+            // 
+            // pbxRibs
+            // 
+            pbxRibs.BackColor = Color.Transparent;
+            pbxRibs.Image = Properties.Resources.ribs;
+            pbxRibs.Location = new Point(838, 216);
+            pbxRibs.Name = "pbxRibs";
+            pbxRibs.Size = new Size(125, 124);
+            pbxRibs.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxRibs.TabIndex = 16;
+            pbxRibs.TabStop = false;
+            // 
+            // pbxPork
+            // 
+            pbxPork.BackColor = Color.Transparent;
+            pbxPork.Image = Properties.Resources.pork;
+            pbxPork.Location = new Point(638, 216);
+            pbxPork.Name = "pbxPork";
+            pbxPork.Size = new Size(125, 124);
+            pbxPork.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxPork.TabIndex = 17;
+            pbxPork.TabStop = false;
+            // 
+            // pbxGroundBeef
+            // 
+            pbxGroundBeef.BackColor = Color.Transparent;
+            pbxGroundBeef.Image = Properties.Resources.GroundBeef;
+            pbxGroundBeef.Location = new Point(426, 216);
+            pbxGroundBeef.Name = "pbxGroundBeef";
+            pbxGroundBeef.Size = new Size(125, 124);
+            pbxGroundBeef.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxGroundBeef.TabIndex = 18;
+            pbxGroundBeef.TabStop = false;
+            // 
+            // pbxChicken
+            // 
+            pbxChicken.BackColor = Color.Transparent;
+            pbxChicken.Image = Properties.Resources.chicken_breast;
+            pbxChicken.Location = new Point(229, 216);
+            pbxChicken.Name = "pbxChicken";
+            pbxChicken.Size = new Size(125, 124);
+            pbxChicken.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxChicken.TabIndex = 19;
+            pbxChicken.TabStop = false;
+            // 
+            // pbxSalmon
+            // 
+            pbxSalmon.BackColor = Color.Transparent;
+            pbxSalmon.Image = Properties.Resources.salmon;
+            pbxSalmon.Location = new Point(1040, 216);
+            pbxSalmon.Name = "pbxSalmon";
+            pbxSalmon.Size = new Size(125, 124);
+            pbxSalmon.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxSalmon.TabIndex = 20;
+            pbxSalmon.TabStop = false;
+            // 
+            // lblSteak
+            // 
+            lblSteak.AutoSize = true;
+            lblSteak.BackColor = SystemColors.Control;
+            lblSteak.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblSteak.Location = new Point(50, 343);
+            lblSteak.Name = "lblSteak";
+            lblSteak.Size = new Size(62, 30);
+            lblSteak.TabIndex = 21;
+            lblSteak.Text = "Steak";
+            // 
+            // lblSalmon
+            // 
+            lblSalmon.AutoSize = true;
+            lblSalmon.BackColor = SystemColors.Control;
+            lblSalmon.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblSalmon.Location = new Point(1058, 343);
+            lblSalmon.Name = "lblSalmon";
+            lblSalmon.Size = new Size(82, 30);
+            lblSalmon.TabIndex = 22;
+            lblSalmon.Text = "Salmon";
+            // 
+            // lblRibs
+            // 
+            lblRibs.AutoSize = true;
+            lblRibs.BackColor = SystemColors.Control;
+            lblRibs.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRibs.Location = new Point(869, 343);
+            lblRibs.Name = "lblRibs";
+            lblRibs.Size = new Size(52, 30);
+            lblRibs.TabIndex = 23;
+            lblRibs.Text = "Ribs";
+            // 
+            // lblChicken
+            // 
+            lblChicken.AutoSize = true;
+            lblChicken.BackColor = SystemColors.Control;
+            lblChicken.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblChicken.Location = new Point(246, 343);
+            lblChicken.Name = "lblChicken";
+            lblChicken.Size = new Size(86, 30);
+            lblChicken.TabIndex = 24;
+            lblChicken.Text = "Chicken";
+            // 
+            // lblGroundBeef
+            // 
+            lblGroundBeef.AutoSize = true;
+            lblGroundBeef.BackColor = SystemColors.Control;
+            lblGroundBeef.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblGroundBeef.Location = new Point(426, 343);
+            lblGroundBeef.Name = "lblGroundBeef";
+            lblGroundBeef.Size = new Size(123, 30);
+            lblGroundBeef.TabIndex = 25;
+            lblGroundBeef.Text = "GroundBeef";
+            // 
+            // lblPork
+            // 
+            lblPork.AutoSize = true;
+            lblPork.BackColor = SystemColors.Control;
+            lblPork.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblPork.Location = new Point(669, 343);
+            lblPork.Name = "lblPork";
+            lblPork.Size = new Size(53, 30);
+            lblPork.TabIndex = 26;
+            lblPork.Text = "Pork";
             // 
             // Tab_Meat
             // 
@@ -147,6 +298,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1192, 653);
+            Controls.Add(lblPork);
+            Controls.Add(lblGroundBeef);
+            Controls.Add(lblChicken);
+            Controls.Add(lblRibs);
+            Controls.Add(lblSalmon);
+            Controls.Add(lblSteak);
+            Controls.Add(pbxSalmon);
+            Controls.Add(pbxChicken);
+            Controls.Add(pbxGroundBeef);
+            Controls.Add(pbxPork);
+            Controls.Add(pbxRibs);
+            Controls.Add(pbxSteak);
             Controls.Add(shopingCart);
             Controls.Add(button1);
             Controls.Add(tabDrinks);
@@ -164,7 +327,14 @@
             FormClosed += Tab_Meat_FormClosed;
             Load += Tab_Meat_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxSteak).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxRibs).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxPork).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxGroundBeef).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxChicken).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxSalmon).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -178,5 +348,17 @@
         private PictureBox pictureBox1;
         private Button button1;
         private Button shopingCart;
+        private PictureBox pbxSteak;
+        private PictureBox pbxRibs;
+        private PictureBox pbxPork;
+        private PictureBox pbxGroundBeef;
+        private PictureBox pbxChicken;
+        private PictureBox pbxSalmon;
+        private Label lblSteak;
+        private Label lblSalmon;
+        private Label lblRibs;
+        private Label lblChicken;
+        private Label lblGroundBeef;
+        private Label lblPork;
     }
 }

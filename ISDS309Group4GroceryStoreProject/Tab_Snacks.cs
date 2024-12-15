@@ -96,5 +96,10 @@ namespace ISDS309Group4GroceryStoreProject
         {
             Application.Exit();
         }
+
+        private void pbxLays_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

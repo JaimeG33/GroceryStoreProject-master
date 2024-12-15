@@ -37,7 +37,25 @@
             pictureBox1 = new PictureBox();
             button1 = new Button();
             shopingCart = new Button();
+            pbxCheese = new PictureBox();
+            pbxYoghurt = new PictureBox();
+            pbxButter = new PictureBox();
+            pbxWhippedCream = new PictureBox();
+            pbxMilkHG = new PictureBox();
+            pbxMilkG = new PictureBox();
+            lblYoghurt = new Label();
+            lblCheese = new Label();
+            lblButter = new Label();
+            lblMilkHG = new Label();
+            lblWC = new Label();
+            lblMilkG = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxCheese).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxYoghurt).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxButter).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxWhippedCream).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxMilkHG).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxMilkG).BeginInit();
             SuspendLayout();
             // 
             // tabDrinks
@@ -141,11 +159,149 @@
             shopingCart.UseVisualStyleBackColor = true;
             shopingCart.Click += shopingCart_Click;
             // 
+            // pbxCheese
+            // 
+            pbxCheese.BackColor = Color.Transparent;
+            pbxCheese.Image = Properties.Resources.Cheese;
+            pbxCheese.Location = new Point(449, 220);
+            pbxCheese.Name = "pbxCheese";
+            pbxCheese.Size = new Size(125, 124);
+            pbxCheese.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxCheese.TabIndex = 22;
+            pbxCheese.TabStop = false;
+            // 
+            // pbxYoghurt
+            // 
+            pbxYoghurt.BackColor = Color.Transparent;
+            pbxYoghurt.Image = Properties.Resources.Yoghurt;
+            pbxYoghurt.Location = new Point(647, 220);
+            pbxYoghurt.Name = "pbxYoghurt";
+            pbxYoghurt.Size = new Size(125, 124);
+            pbxYoghurt.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxYoghurt.TabIndex = 23;
+            pbxYoghurt.TabStop = false;
+            // 
+            // pbxButter
+            // 
+            pbxButter.BackColor = Color.Transparent;
+            pbxButter.Image = Properties.Resources.Butter;
+            pbxButter.Location = new Point(851, 220);
+            pbxButter.Name = "pbxButter";
+            pbxButter.Size = new Size(125, 124);
+            pbxButter.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxButter.TabIndex = 24;
+            pbxButter.TabStop = false;
+            // 
+            // pbxWhippedCream
+            // 
+            pbxWhippedCream.BackColor = Color.Transparent;
+            pbxWhippedCream.Image = Properties.Resources.Whipped_Cream;
+            pbxWhippedCream.Location = new Point(1033, 220);
+            pbxWhippedCream.Name = "pbxWhippedCream";
+            pbxWhippedCream.Size = new Size(125, 124);
+            pbxWhippedCream.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxWhippedCream.TabIndex = 25;
+            pbxWhippedCream.TabStop = false;
+            // 
+            // pbxMilkHG
+            // 
+            pbxMilkHG.BackColor = Color.Transparent;
+            pbxMilkHG.Image = Properties.Resources.Milk_HG;
+            pbxMilkHG.Location = new Point(234, 220);
+            pbxMilkHG.Name = "pbxMilkHG";
+            pbxMilkHG.Size = new Size(125, 124);
+            pbxMilkHG.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxMilkHG.TabIndex = 26;
+            pbxMilkHG.TabStop = false;
+            // 
+            // pbxMilkG
+            // 
+            pbxMilkG.BackColor = Color.Transparent;
+            pbxMilkG.Image = Properties.Resources.Milk_G;
+            pbxMilkG.Location = new Point(24, 220);
+            pbxMilkG.Name = "pbxMilkG";
+            pbxMilkG.Size = new Size(125, 124);
+            pbxMilkG.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxMilkG.TabIndex = 27;
+            pbxMilkG.TabStop = false;
+            // 
+            // lblYoghurt
+            // 
+            lblYoghurt.AutoSize = true;
+            lblYoghurt.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblYoghurt.Location = new Point(668, 347);
+            lblYoghurt.Name = "lblYoghurt";
+            lblYoghurt.Size = new Size(85, 30);
+            lblYoghurt.TabIndex = 30;
+            lblYoghurt.Text = "Yoghurt";
+            // 
+            // lblCheese
+            // 
+            lblCheese.AutoSize = true;
+            lblCheese.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCheese.Location = new Point(471, 347);
+            lblCheese.Name = "lblCheese";
+            lblCheese.Size = new Size(80, 30);
+            lblCheese.TabIndex = 31;
+            lblCheese.Text = "Cheese";
+            // 
+            // lblButter
+            // 
+            lblButter.AutoSize = true;
+            lblButter.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblButter.Location = new Point(876, 347);
+            lblButter.Name = "lblButter";
+            lblButter.Size = new Size(69, 30);
+            lblButter.TabIndex = 32;
+            lblButter.Text = "Butter";
+            // 
+            // lblMilkHG
+            // 
+            lblMilkHG.AutoSize = true;
+            lblMilkHG.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMilkHG.Location = new Point(209, 347);
+            lblMilkHG.Name = "lblMilkHG";
+            lblMilkHG.Size = new Size(175, 30);
+            lblMilkHG.TabIndex = 33;
+            lblMilkHG.Text = "Milk (Half-Gallon)";
+            // 
+            // lblWC
+            // 
+            lblWC.AutoSize = true;
+            lblWC.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblWC.Location = new Point(1017, 347);
+            lblWC.Name = "lblWC";
+            lblWC.Size = new Size(163, 30);
+            lblWC.TabIndex = 34;
+            lblWC.Text = "Whipped Cream";
+            // 
+            // lblMilkG
+            // 
+            lblMilkG.AutoSize = true;
+            lblMilkG.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblMilkG.Location = new Point(20, 347);
+            lblMilkG.Name = "lblMilkG";
+            lblMilkG.Size = new Size(129, 30);
+            lblMilkG.TabIndex = 35;
+            lblMilkG.Text = "Milk (Gallon)";
+            // 
             // Tab_Dairy
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1192, 653);
+            Controls.Add(lblMilkG);
+            Controls.Add(lblWC);
+            Controls.Add(lblMilkHG);
+            Controls.Add(lblButter);
+            Controls.Add(lblCheese);
+            Controls.Add(lblYoghurt);
+            Controls.Add(pbxMilkG);
+            Controls.Add(pbxMilkHG);
+            Controls.Add(pbxWhippedCream);
+            Controls.Add(pbxButter);
+            Controls.Add(pbxYoghurt);
+            Controls.Add(pbxCheese);
             Controls.Add(shopingCart);
             Controls.Add(button1);
             Controls.Add(tabDrinks);
@@ -163,7 +319,14 @@
             FormClosed += Tab_Dairy_FormClosed;
             Load += Tab_Dairy_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxCheese).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxYoghurt).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxButter).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxWhippedCream).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxMilkHG).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxMilkG).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -177,5 +340,17 @@
         private PictureBox pictureBox1;
         private Button button1;
         private Button shopingCart;
+        private PictureBox pbxCheese;
+        private PictureBox pbxYoghurt;
+        private PictureBox pbxButter;
+        private PictureBox pbxWhippedCream;
+        private PictureBox pbxMilkHG;
+        private PictureBox pbxMilkG;
+        private Label lblYoghurt;
+        private Label lblCheese;
+        private Label lblButter;
+        private Label lblMilkHG;
+        private Label lblWC;
+        private Label lblMilkG;
     }
 }

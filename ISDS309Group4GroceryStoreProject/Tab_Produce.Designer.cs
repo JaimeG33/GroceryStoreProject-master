@@ -37,7 +37,25 @@
             pictureBox1 = new PictureBox();
             button1 = new Button();
             shopingCart = new Button();
+            pbxCabbage = new PictureBox();
+            pbxCarrots = new PictureBox();
+            pbxEggs = new PictureBox();
+            pbxBellPepper = new PictureBox();
+            pbxApples = new PictureBox();
+            pbxLettuce = new PictureBox();
+            lblLettuce = new Label();
+            lblApples = new Label();
+            lblEggs = new Label();
+            lblBellPepper = new Label();
+            lblCarrots = new Label();
+            lblCabbage = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxCabbage).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxCarrots).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxEggs).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxBellPepper).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxApples).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxLettuce).BeginInit();
             SuspendLayout();
             // 
             // tabDrinks
@@ -141,11 +159,149 @@
             shopingCart.UseVisualStyleBackColor = true;
             shopingCart.Click += shopingCart_Click;
             // 
+            // pbxCabbage
+            // 
+            pbxCabbage.BackColor = Color.Transparent;
+            pbxCabbage.Image = Properties.Resources.cabbage;
+            pbxCabbage.Location = new Point(632, 209);
+            pbxCabbage.Name = "pbxCabbage";
+            pbxCabbage.Size = new Size(125, 124);
+            pbxCabbage.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxCabbage.TabIndex = 15;
+            pbxCabbage.TabStop = false;
+            // 
+            // pbxCarrots
+            // 
+            pbxCarrots.BackColor = Color.Transparent;
+            pbxCarrots.Image = Properties.Resources.carrots;
+            pbxCarrots.Location = new Point(831, 209);
+            pbxCarrots.Name = "pbxCarrots";
+            pbxCarrots.Size = new Size(125, 124);
+            pbxCarrots.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxCarrots.TabIndex = 16;
+            pbxCarrots.TabStop = false;
+            // 
+            // pbxEggs
+            // 
+            pbxEggs.BackColor = Color.Transparent;
+            pbxEggs.Image = Properties.Resources.eggs;
+            pbxEggs.Location = new Point(1019, 209);
+            pbxEggs.Name = "pbxEggs";
+            pbxEggs.Size = new Size(125, 124);
+            pbxEggs.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxEggs.TabIndex = 17;
+            pbxEggs.TabStop = false;
+            // 
+            // pbxBellPepper
+            // 
+            pbxBellPepper.BackColor = Color.Transparent;
+            pbxBellPepper.Image = Properties.Resources.bell_pepper;
+            pbxBellPepper.Location = new Point(434, 209);
+            pbxBellPepper.Name = "pbxBellPepper";
+            pbxBellPepper.Size = new Size(125, 124);
+            pbxBellPepper.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxBellPepper.TabIndex = 18;
+            pbxBellPepper.TabStop = false;
+            // 
+            // pbxApples
+            // 
+            pbxApples.BackColor = Color.Transparent;
+            pbxApples.Image = Properties.Resources.apples;
+            pbxApples.Location = new Point(236, 209);
+            pbxApples.Name = "pbxApples";
+            pbxApples.Size = new Size(125, 124);
+            pbxApples.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxApples.TabIndex = 19;
+            pbxApples.TabStop = false;
+            // 
+            // pbxLettuce
+            // 
+            pbxLettuce.BackColor = Color.Transparent;
+            pbxLettuce.Image = Properties.Resources.lettuce;
+            pbxLettuce.Location = new Point(21, 209);
+            pbxLettuce.Name = "pbxLettuce";
+            pbxLettuce.Size = new Size(125, 124);
+            pbxLettuce.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxLettuce.TabIndex = 20;
+            pbxLettuce.TabStop = false;
+            // 
+            // lblLettuce
+            // 
+            lblLettuce.AutoSize = true;
+            lblLettuce.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblLettuce.Location = new Point(43, 336);
+            lblLettuce.Name = "lblLettuce";
+            lblLettuce.Size = new Size(81, 30);
+            lblLettuce.TabIndex = 21;
+            lblLettuce.Text = "Lettuce";
+            // 
+            // lblApples
+            // 
+            lblApples.AutoSize = true;
+            lblApples.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblApples.Location = new Point(256, 336);
+            lblApples.Name = "lblApples";
+            lblApples.Size = new Size(76, 30);
+            lblApples.TabIndex = 22;
+            lblApples.Text = "Apples";
+            // 
+            // lblEggs
+            // 
+            lblEggs.AutoSize = true;
+            lblEggs.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEggs.Location = new Point(1048, 336);
+            lblEggs.Name = "lblEggs";
+            lblEggs.Size = new Size(57, 30);
+            lblEggs.TabIndex = 23;
+            lblEggs.Text = "Eggs";
+            // 
+            // lblBellPepper
+            // 
+            lblBellPepper.AutoSize = true;
+            lblBellPepper.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblBellPepper.Location = new Point(434, 336);
+            lblBellPepper.Name = "lblBellPepper";
+            lblBellPepper.Size = new Size(116, 30);
+            lblBellPepper.TabIndex = 24;
+            lblBellPepper.Text = "Bell Pepper";
+            // 
+            // lblCarrots
+            // 
+            lblCarrots.AutoSize = true;
+            lblCarrots.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCarrots.Location = new Point(853, 336);
+            lblCarrots.Name = "lblCarrots";
+            lblCarrots.Size = new Size(79, 30);
+            lblCarrots.TabIndex = 25;
+            lblCarrots.Text = "Carrots";
+            // 
+            // lblCabbage
+            // 
+            lblCabbage.AutoSize = true;
+            lblCabbage.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCabbage.Location = new Point(648, 336);
+            lblCabbage.Name = "lblCabbage";
+            lblCabbage.Size = new Size(95, 30);
+            lblCabbage.TabIndex = 26;
+            lblCabbage.Text = "Cabbage";
+            // 
             // Tab_Produce
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1192, 653);
+            Controls.Add(lblCabbage);
+            Controls.Add(lblCarrots);
+            Controls.Add(lblBellPepper);
+            Controls.Add(lblEggs);
+            Controls.Add(lblApples);
+            Controls.Add(lblLettuce);
+            Controls.Add(pbxLettuce);
+            Controls.Add(pbxApples);
+            Controls.Add(pbxBellPepper);
+            Controls.Add(pbxEggs);
+            Controls.Add(pbxCarrots);
+            Controls.Add(pbxCabbage);
             Controls.Add(shopingCart);
             Controls.Add(button1);
             Controls.Add(tabDrinks);
@@ -163,7 +319,14 @@
             FormClosed += Tab_Produce_FormClosed;
             Load += Tab_Produce_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxCabbage).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxCarrots).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxEggs).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxBellPepper).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxApples).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxLettuce).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -177,5 +340,17 @@
         private PictureBox pictureBox1;
         private Button button1;
         private Button shopingCart;
+        private PictureBox pbxCabbage;
+        private PictureBox pbxCarrots;
+        private PictureBox pbxEggs;
+        private PictureBox pbxBellPepper;
+        private PictureBox pbxApples;
+        private PictureBox pbxLettuce;
+        private Label lblLettuce;
+        private Label lblApples;
+        private Label lblEggs;
+        private Label lblBellPepper;
+        private Label lblCarrots;
+        private Label lblCabbage;
     }
 }
