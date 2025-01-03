@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             label2 = new Label();
+            listView1 = new ListView();
             SuspendLayout();
             // 
             // label1
@@ -51,11 +52,20 @@
             label2.TabIndex = 1;
             label2.Text = "Transactions";
             // 
+            // listView1
+            // 
+            listView1.Location = new Point(540, 121);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(388, 309);
+            listView1.TabIndex = 2;
+            listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // Tab_Admin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1192, 653);
+            Controls.Add(listView1);
             Controls.Add(label2);
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
@@ -73,5 +83,6 @@
 
         private Label label1;
         private Label label2;
+        private ListView listView1;
     }
 }

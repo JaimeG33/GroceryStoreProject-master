@@ -70,12 +70,11 @@ namespace ISDS309Group4GroceryStoreProject
             //read 1 line of the file
             recordIn = reader.ReadLine();
             //Read the file once to set the length of the array
-            while (recordIn != null)
+            while ((recordIn = reader.ReadLine()) != null)
             {
                 count++;
-                recordIn = reader.ReadLine();
             }
-            length = count-1;
+            length = count;
             item = new string[length, 3];
 
             //read again to input all the items
@@ -133,6 +132,27 @@ namespace ISDS309Group4GroceryStoreProject
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void clearCart_Click(object sender, EventArgs e)
+        {
+            string pathToStore = Path.Combine("ProjectData", "UserInfo", "Curent User Purchase.txt");
+            string recordIn = "";
+            int count = 0, length = 0;
+            FileStream outFile = new FileStream(pathToStore,
+                FileMode.Create, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(outFile);
+            writer.WriteLine("Name of Item, Price in $, Quantity in Cart");
+
+            writer.Close();
+            outFile.Close();
+        }
+
+        private void toCheckout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Customer_Info customerInfo = new Customer_Info();
+            customerInfo.Show();
         }
     }
 }

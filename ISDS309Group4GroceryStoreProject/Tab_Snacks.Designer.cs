@@ -49,6 +49,12 @@
             lblCandy = new Label();
             lblChocolate = new Label();
             lblChips = new Label();
+            btnLoli = new Button();
+            btnRamen = new Button();
+            btnChips = new Button();
+            btnChoc = new Button();
+            btnCandy = new Button();
+            btnTakis = new Button();
             ((System.ComponentModel.ISupportInitialize)pbxTakis).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxLettuce).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxLays).BeginInit();
@@ -286,11 +292,78 @@
             lblChips.TabIndex = 32;
             lblChips.Text = "Chips";
             // 
+            // btnLoli
+            // 
+            btnLoli.Location = new Point(1038, 377);
+            btnLoli.Name = "btnLoli";
+            btnLoli.Size = new Size(98, 23);
+            btnLoli.TabIndex = 33;
+            btnLoli.Text = "Add to Cart";
+            btnLoli.UseVisualStyleBackColor = true;
+            btnLoli.Click += btnLoli_Click;
+            // 
+            // btnRamen
+            // 
+            btnRamen.Location = new Point(833, 377);
+            btnRamen.Name = "btnRamen";
+            btnRamen.Size = new Size(98, 23);
+            btnRamen.TabIndex = 34;
+            btnRamen.Text = "Add to Cart";
+            btnRamen.UseVisualStyleBackColor = true;
+            btnRamen.Click += btnRamen_Click;
+            // 
+            // btnChips
+            // 
+            btnChips.Location = new Point(630, 377);
+            btnChips.Name = "btnChips";
+            btnChips.Size = new Size(98, 23);
+            btnChips.TabIndex = 35;
+            btnChips.Text = "Add to Cart";
+            btnChips.UseVisualStyleBackColor = true;
+            btnChips.Click += btnChips_Click;
+            // 
+            // btnChoc
+            // 
+            btnChoc.Location = new Point(435, 377);
+            btnChoc.Name = "btnChoc";
+            btnChoc.Size = new Size(98, 23);
+            btnChoc.TabIndex = 36;
+            btnChoc.Text = "Add to Cart";
+            btnChoc.UseVisualStyleBackColor = true;
+            btnChoc.Click += btnChoc_Click;
+            // 
+            // btnCandy
+            // 
+            btnCandy.Location = new Point(232, 377);
+            btnCandy.Name = "btnCandy";
+            btnCandy.Size = new Size(98, 23);
+            btnCandy.TabIndex = 37;
+            btnCandy.Text = "Add to Cart";
+            btnCandy.UseVisualStyleBackColor = true;
+            btnCandy.Click += btnCandy_Click;
+            // 
+            // btnTakis
+            // 
+            btnTakis.Location = new Point(42, 377);
+            btnTakis.Name = "btnTakis";
+            btnTakis.Size = new Size(98, 23);
+            btnTakis.TabIndex = 38;
+            btnTakis.Text = "Add to Cart";
+            btnTakis.UseVisualStyleBackColor = true;
+            btnTakis.Click += btnTakis_Click_1;
+            btnTakis.Click += btnTakis_Click;
+            // 
             // Tab_Snacks
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1192, 653);
+            Controls.Add(btnTakis);
+            Controls.Add(btnCandy);
+            Controls.Add(btnChoc);
+            Controls.Add(btnChips);
+            Controls.Add(btnRamen);
+            Controls.Add(btnLoli);
             Controls.Add(lblChips);
             Controls.Add(lblChocolate);
             Controls.Add(lblCandy);
@@ -354,5 +427,11 @@
         private Label lblCandy;
         private Label lblChocolate;
         private Label lblChips;
+        private Button btnLoli;
+        private Button btnRamen;
+        private Button btnChips;
+        private Button btnChoc;
+        private Button btnCandy;
+        private Button btnTakis;
     }
 }

@@ -112,7 +112,10 @@ namespace ISDS309Group4GroceryStoreProject
 
                 path = Path.Combine(path, "Curent User Purchase.txt");
                 outFile = new FileStream(path, 
-                    FileMode.Create);
+                    FileMode.Create, FileAccess.Write);
+                writer = new StreamWriter(outFile);
+                writer.WriteLine("Name of Item, Price in $, Quantity in Cart");
+                writer.Close() ;
                 outFile.Close();
 
 
@@ -130,7 +133,7 @@ namespace ISDS309Group4GroceryStoreProject
          {"Salmon", "2.50", "0"}, 
          {"Bass", "3.25", "0"}, 
          {"Tuna", "2.50", "0"}, 
-         {"Tri-Tip Stealk", "20.00", "0"}, 
+         {"Tri-Tip Steak", "20.00", "0"}, 
          {"Pork", "2.75", "0"}, //7
 
          {"12 Eggs", "3.25", "0"}, //8 Produce Section

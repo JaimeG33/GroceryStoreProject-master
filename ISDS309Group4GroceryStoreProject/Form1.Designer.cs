@@ -42,7 +42,7 @@
             // 
             button1.Anchor = AnchorStyles.Right;
             button1.AutoSize = true;
-            button1.BackColor = Color.NavajoWhite;
+            button1.BackColor = Color.YellowGreen;
             button1.BackgroundImageLayout = ImageLayout.Center;
             button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);

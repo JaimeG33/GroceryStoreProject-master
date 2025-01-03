@@ -49,6 +49,12 @@
             lblChicken = new Label();
             lblGroundBeef = new Label();
             lblPork = new Label();
+            btnSalmon = new Button();
+            btnRibs = new Button();
+            btnPork = new Button();
+            btnGBeef = new Button();
+            btnChicken = new Button();
+            btnSteak = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxSteak).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxRibs).BeginInit();
@@ -292,12 +298,78 @@
             lblPork.TabIndex = 26;
             lblPork.Text = "Pork";
             // 
+            // btnSalmon
+            // 
+            btnSalmon.Location = new Point(1042, 376);
+            btnSalmon.Name = "btnSalmon";
+            btnSalmon.Size = new Size(98, 23);
+            btnSalmon.TabIndex = 42;
+            btnSalmon.Text = "Add to Cart";
+            btnSalmon.UseVisualStyleBackColor = true;
+            btnSalmon.Click += btnSalmon_Click;
+            // 
+            // btnRibs
+            // 
+            btnRibs.Location = new Point(854, 376);
+            btnRibs.Name = "btnRibs";
+            btnRibs.Size = new Size(98, 23);
+            btnRibs.TabIndex = 43;
+            btnRibs.Text = "Add to Cart";
+            btnRibs.UseVisualStyleBackColor = true;
+            btnRibs.Click += btnRibs_Click;
+            // 
+            // btnPork
+            // 
+            btnPork.Location = new Point(654, 376);
+            btnPork.Name = "btnPork";
+            btnPork.Size = new Size(98, 23);
+            btnPork.TabIndex = 44;
+            btnPork.Text = "Add to Cart";
+            btnPork.UseVisualStyleBackColor = true;
+            btnPork.Click += btnPork_Click;
+            // 
+            // btnGBeef
+            // 
+            btnGBeef.Location = new Point(439, 376);
+            btnGBeef.Name = "btnGBeef";
+            btnGBeef.Size = new Size(98, 23);
+            btnGBeef.TabIndex = 45;
+            btnGBeef.Text = "Add to Cart";
+            btnGBeef.UseVisualStyleBackColor = true;
+            btnGBeef.Click += btnGBeef_Click;
+            // 
+            // btnChicken
+            // 
+            btnChicken.Location = new Point(234, 376);
+            btnChicken.Name = "btnChicken";
+            btnChicken.Size = new Size(98, 23);
+            btnChicken.TabIndex = 46;
+            btnChicken.Text = "Add to Cart";
+            btnChicken.UseVisualStyleBackColor = true;
+            btnChicken.Click += btnChicken_Click;
+            // 
+            // btnSteak
+            // 
+            btnSteak.Location = new Point(34, 376);
+            btnSteak.Name = "btnSteak";
+            btnSteak.Size = new Size(98, 23);
+            btnSteak.TabIndex = 47;
+            btnSteak.Text = "Add to Cart";
+            btnSteak.UseVisualStyleBackColor = true;
+            btnSteak.Click += btnSteak_Click;
+            // 
             // Tab_Meat
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1192, 653);
+            Controls.Add(btnSteak);
+            Controls.Add(btnChicken);
+            Controls.Add(btnGBeef);
+            Controls.Add(btnPork);
+            Controls.Add(btnRibs);
+            Controls.Add(btnSalmon);
             Controls.Add(lblPork);
             Controls.Add(lblGroundBeef);
             Controls.Add(lblChicken);
@@ -360,5 +432,11 @@
         private Label lblChicken;
         private Label lblGroundBeef;
         private Label lblPork;
+        private Button btnSalmon;
+        private Button btnRibs;
+        private Button btnPork;
+        private Button btnGBeef;
+        private Button btnChicken;
+        private Button btnSteak;
     }
 }

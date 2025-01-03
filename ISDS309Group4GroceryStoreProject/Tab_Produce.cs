@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ISDS309Group4GroceryStoreProject.Tab_Home;
 
 namespace ISDS309Group4GroceryStoreProject
 {
@@ -90,6 +91,294 @@ namespace ISDS309Group4GroceryStoreProject
             //.Show = open new tab, (can alt tab to others)
             //.ShowDialog = open new tab but you can't eddit others while its open
             tab_Shoping.ShowDialog();
+        }
+
+        private void btnLettuce_Click(object sender, EventArgs e)
+        {
+            string recordIn, item = "Lettuce,1.25,0";
+            char DELIM = ',';
+
+            Paths paths = new Paths();
+            InShoppingCart inShoppingCart = new InShoppingCart();
+
+            //Read inventory to scan/store item info
+            FileStream inFile = new FileStream(paths.pathRead,
+                FileMode.Open, FileAccess.Read);
+            //Open stream reader to read the file ^
+            StreamReader reader = new StreamReader(inFile);
+            //Start at the top of the file
+            inFile.Seek(0, SeekOrigin.Begin);
+            //read 1 line of the file
+            recordIn = reader.ReadLine();
+            //keep reading until file is done
+            while (recordIn != null)
+            {
+                //record info when match is found
+                if (recordIn == item)//replace this part for each button
+                {
+                    string[] fields = recordIn.Split(DELIM);
+                    inShoppingCart.addToShopCart[0] = fields[0];
+                    inShoppingCart.addToShopCart[1] = fields[1];
+                    inShoppingCart.addToShopCart[2] = Convert.ToString(inShoppingCart.quantity);
+                }
+                recordIn = reader.ReadLine();
+            }
+            reader.Close();
+            inFile.Close();
+            inShoppingCart.quantity = 1;
+
+            //now record everything on the Curent User Purchase file
+            FileStream outFile = new FileStream(paths.pathToStore,
+            FileMode.Append, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(outFile);
+            // Write all items added to the cart
+            writer.WriteLine("{0},{1},{2}",
+                inShoppingCart.addToShopCart[0],
+                inShoppingCart.addToShopCart[1],
+                inShoppingCart.addToShopCart[2]);
+
+            writer.Close();
+            outFile.Close();
+        }
+
+        private void btnApples_Click(object sender, EventArgs e)
+        {
+            string recordIn, item = "Red Apple,0.75,0";
+            char DELIM = ',';
+
+            Paths paths = new Paths();
+            InShoppingCart inShoppingCart = new InShoppingCart();
+
+            //Read inventory to scan/store item info
+            FileStream inFile = new FileStream(paths.pathRead,
+                FileMode.Open, FileAccess.Read);
+            //Open stream reader to read the file ^
+            StreamReader reader = new StreamReader(inFile);
+            //Start at the top of the file
+            inFile.Seek(0, SeekOrigin.Begin);
+            //read 1 line of the file
+            recordIn = reader.ReadLine();
+            //keep reading until file is done
+            while (recordIn != null)
+            {
+                //record info when match is found
+                if (recordIn == item)//replace this part for each button
+                {
+                    string[] fields = recordIn.Split(DELIM);
+                    inShoppingCart.addToShopCart[0] = fields[0];
+                    inShoppingCart.addToShopCart[1] = fields[1];
+                    inShoppingCart.addToShopCart[2] = Convert.ToString(inShoppingCart.quantity);
+                }
+                recordIn = reader.ReadLine();
+            }
+            reader.Close();
+            inFile.Close();
+            inShoppingCart.quantity = 1;
+
+            //now record everything on the Curent User Purchase file
+            FileStream outFile = new FileStream(paths.pathToStore,
+            FileMode.Append, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(outFile);
+            // Write all items added to the cart
+            writer.WriteLine("{0},{1},{2}",
+                inShoppingCart.addToShopCart[0],
+                inShoppingCart.addToShopCart[1],
+                inShoppingCart.addToShopCart[2]);
+
+            writer.Close();
+            outFile.Close();
+        }
+
+        private void btnBPepper_Click(object sender, EventArgs e)
+        {
+            string recordIn, item = "Bell Pepper,1.25,0";
+            char DELIM = ',';
+
+            Paths paths = new Paths();
+            InShoppingCart inShoppingCart = new InShoppingCart();
+
+            //Read inventory to scan/store item info
+            FileStream inFile = new FileStream(paths.pathRead,
+                FileMode.Open, FileAccess.Read);
+            //Open stream reader to read the file ^
+            StreamReader reader = new StreamReader(inFile);
+            //Start at the top of the file
+            inFile.Seek(0, SeekOrigin.Begin);
+            //read 1 line of the file
+            recordIn = reader.ReadLine();
+            //keep reading until file is done
+            while (recordIn != null)
+            {
+                //record info when match is found
+                if (recordIn == item)//replace this part for each button
+                {
+                    string[] fields = recordIn.Split(DELIM);
+                    inShoppingCart.addToShopCart[0] = fields[0];
+                    inShoppingCart.addToShopCart[1] = fields[1];
+                    inShoppingCart.addToShopCart[2] = Convert.ToString(inShoppingCart.quantity);
+                }
+                recordIn = reader.ReadLine();
+            }
+            reader.Close();
+            inFile.Close();
+            inShoppingCart.quantity = 1;
+
+            //now record everything on the Curent User Purchase file
+            FileStream outFile = new FileStream(paths.pathToStore,
+            FileMode.Append, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(outFile);
+            // Write all items added to the cart
+            writer.WriteLine("{0},{1},{2}",
+                inShoppingCart.addToShopCart[0],
+                inShoppingCart.addToShopCart[1],
+                inShoppingCart.addToShopCart[2]);
+
+            writer.Close();
+            outFile.Close();
+        }
+
+        private void btnCabbage_Click(object sender, EventArgs e)
+        {
+            string recordIn, item = "Cabbage,1.50,0";
+            char DELIM = ',';
+
+            Paths paths = new Paths();
+            InShoppingCart inShoppingCart = new InShoppingCart();
+
+            //Read inventory to scan/store item info
+            FileStream inFile = new FileStream(paths.pathRead,
+                FileMode.Open, FileAccess.Read);
+            //Open stream reader to read the file ^
+            StreamReader reader = new StreamReader(inFile);
+            //Start at the top of the file
+            inFile.Seek(0, SeekOrigin.Begin);
+            //read 1 line of the file
+            recordIn = reader.ReadLine();
+            //keep reading until file is done
+            while (recordIn != null)
+            {
+                //record info when match is found
+                if (recordIn == item)//replace this part for each button
+                {
+                    string[] fields = recordIn.Split(DELIM);
+                    inShoppingCart.addToShopCart[0] = fields[0];
+                    inShoppingCart.addToShopCart[1] = fields[1];
+                    inShoppingCart.addToShopCart[2] = Convert.ToString(inShoppingCart.quantity);
+                }
+                recordIn = reader.ReadLine();
+            }
+            reader.Close();
+            inFile.Close();
+            inShoppingCart.quantity = 1;
+
+            //now record everything on the Curent User Purchase file
+            FileStream outFile = new FileStream(paths.pathToStore,
+            FileMode.Append, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(outFile);
+            // Write all items added to the cart
+            writer.WriteLine("{0},{1},{2}",
+                inShoppingCart.addToShopCart[0],
+                inShoppingCart.addToShopCart[1],
+                inShoppingCart.addToShopCart[2]);
+
+            writer.Close();
+            outFile.Close();
+        }
+
+        private void btnCarrots_Click(object sender, EventArgs e)
+        {
+            string recordIn, item = "Carrots,1.50,0";
+            char DELIM = ',';
+
+            Paths paths = new Paths();
+            InShoppingCart inShoppingCart = new InShoppingCart();
+
+            //Read inventory to scan/store item info
+            FileStream inFile = new FileStream(paths.pathRead,
+                FileMode.Open, FileAccess.Read);
+            //Open stream reader to read the file ^
+            StreamReader reader = new StreamReader(inFile);
+            //Start at the top of the file
+            inFile.Seek(0, SeekOrigin.Begin);
+            //read 1 line of the file
+            recordIn = reader.ReadLine();
+            //keep reading until file is done
+            while (recordIn != null)
+            {
+                //record info when match is found
+                if (recordIn == item)//replace this part for each button
+                {
+                    string[] fields = recordIn.Split(DELIM);
+                    inShoppingCart.addToShopCart[0] = fields[0];
+                    inShoppingCart.addToShopCart[1] = fields[1];
+                    inShoppingCart.addToShopCart[2] = Convert.ToString(inShoppingCart.quantity);
+                }
+                recordIn = reader.ReadLine();
+            }
+            reader.Close();
+            inFile.Close();
+            inShoppingCart.quantity = 1;
+
+            //now record everything on the Curent User Purchase file
+            FileStream outFile = new FileStream(paths.pathToStore,
+            FileMode.Append, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(outFile);
+            // Write all items added to the cart
+            writer.WriteLine("{0},{1},{2}",
+                inShoppingCart.addToShopCart[0],
+                inShoppingCart.addToShopCart[1],
+                inShoppingCart.addToShopCart[2]);
+
+            writer.Close();
+            outFile.Close();
+        }
+
+        private void btnEggs_Click(object sender, EventArgs e)
+        {
+            string recordIn, item = "12 Eggs,3.25,0";
+            char DELIM = ',';
+
+            Paths paths = new Paths();
+            InShoppingCart inShoppingCart = new InShoppingCart();
+
+            //Read inventory to scan/store item info
+            FileStream inFile = new FileStream(paths.pathRead,
+                FileMode.Open, FileAccess.Read);
+            //Open stream reader to read the file ^
+            StreamReader reader = new StreamReader(inFile);
+            //Start at the top of the file
+            inFile.Seek(0, SeekOrigin.Begin);
+            //read 1 line of the file
+            recordIn = reader.ReadLine();
+            //keep reading until file is done
+            while (recordIn != null)
+            {
+                //record info when match is found
+                if (recordIn == item)//replace this part for each button
+                {
+                    string[] fields = recordIn.Split(DELIM);
+                    inShoppingCart.addToShopCart[0] = fields[0];
+                    inShoppingCart.addToShopCart[1] = fields[1];
+                    inShoppingCart.addToShopCart[2] = Convert.ToString(inShoppingCart.quantity);
+                }
+                recordIn = reader.ReadLine();
+            }
+            reader.Close();
+            inFile.Close();
+            inShoppingCart.quantity = 1;
+
+            //now record everything on the Curent User Purchase file
+            FileStream outFile = new FileStream(paths.pathToStore,
+            FileMode.Append, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(outFile);
+            // Write all items added to the cart
+            writer.WriteLine("{0},{1},{2}",
+                inShoppingCart.addToShopCart[0],
+                inShoppingCart.addToShopCart[1],
+                inShoppingCart.addToShopCart[2]);
+
+            writer.Close();
+            outFile.Close();
         }
 
         private void Tab_Produce_FormClosed(object sender, FormClosedEventArgs e)

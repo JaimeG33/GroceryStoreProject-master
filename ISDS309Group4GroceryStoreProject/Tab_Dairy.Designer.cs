@@ -49,6 +49,12 @@
             lblMilkHG = new Label();
             lblWC = new Label();
             lblMilkG = new Label();
+            btnWhippedC = new Button();
+            btnButter = new Button();
+            btnYoghurt = new Button();
+            btnCheese = new Button();
+            btnMilkHG = new Button();
+            btnMilkG = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxCheese).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxYoghurt).BeginInit();
@@ -285,11 +291,77 @@
             lblMilkG.TabIndex = 35;
             lblMilkG.Text = "Milk (Gallon)";
             // 
+            // btnWhippedC
+            // 
+            btnWhippedC.Location = new Point(1049, 380);
+            btnWhippedC.Name = "btnWhippedC";
+            btnWhippedC.Size = new Size(98, 23);
+            btnWhippedC.TabIndex = 36;
+            btnWhippedC.Text = "Add to Cart";
+            btnWhippedC.UseVisualStyleBackColor = true;
+            btnWhippedC.Click += btnWhippedC_Click;
+            // 
+            // btnButter
+            // 
+            btnButter.Location = new Point(867, 380);
+            btnButter.Name = "btnButter";
+            btnButter.Size = new Size(98, 23);
+            btnButter.TabIndex = 37;
+            btnButter.Text = "Add to Cart";
+            btnButter.UseVisualStyleBackColor = true;
+            btnButter.Click += btnButter_Click;
+            // 
+            // btnYoghurt
+            // 
+            btnYoghurt.Location = new Point(668, 380);
+            btnYoghurt.Name = "btnYoghurt";
+            btnYoghurt.Size = new Size(98, 23);
+            btnYoghurt.TabIndex = 38;
+            btnYoghurt.Text = "Add to Cart";
+            btnYoghurt.UseVisualStyleBackColor = true;
+            btnYoghurt.Click += btnYoghurt_Click;
+            // 
+            // btnCheese
+            // 
+            btnCheese.Location = new Point(462, 380);
+            btnCheese.Name = "btnCheese";
+            btnCheese.Size = new Size(98, 23);
+            btnCheese.TabIndex = 39;
+            btnCheese.Text = "Add to Cart";
+            btnCheese.UseVisualStyleBackColor = true;
+            btnCheese.Click += btnCheese_Click;
+            // 
+            // btnMilkHG
+            // 
+            btnMilkHG.Location = new Point(249, 380);
+            btnMilkHG.Name = "btnMilkHG";
+            btnMilkHG.Size = new Size(98, 23);
+            btnMilkHG.TabIndex = 40;
+            btnMilkHG.Text = "Add to Cart";
+            btnMilkHG.UseVisualStyleBackColor = true;
+            btnMilkHG.Click += btnMilkHG_Click;
+            // 
+            // btnMilkG
+            // 
+            btnMilkG.Location = new Point(37, 380);
+            btnMilkG.Name = "btnMilkG";
+            btnMilkG.Size = new Size(98, 23);
+            btnMilkG.TabIndex = 41;
+            btnMilkG.Text = "Add to Cart";
+            btnMilkG.UseVisualStyleBackColor = true;
+            btnMilkG.Click += btnMilkG_Click;
+            // 
             // Tab_Dairy
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1192, 653);
+            Controls.Add(btnMilkG);
+            Controls.Add(btnMilkHG);
+            Controls.Add(btnCheese);
+            Controls.Add(btnYoghurt);
+            Controls.Add(btnButter);
+            Controls.Add(btnWhippedC);
             Controls.Add(lblMilkG);
             Controls.Add(lblWC);
             Controls.Add(lblMilkHG);
@@ -352,5 +424,11 @@
         private Label lblMilkHG;
         private Label lblWC;
         private Label lblMilkG;
+        private Button btnWhippedC;
+        private Button btnButter;
+        private Button btnYoghurt;
+        private Button btnCheese;
+        private Button btnMilkHG;
+        private Button btnMilkG;
     }
 }

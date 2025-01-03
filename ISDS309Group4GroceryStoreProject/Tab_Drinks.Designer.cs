@@ -49,6 +49,12 @@
             lblMountainDew = new Label();
             lblEnergy = new Label();
             lblJuice = new Label();
+            btnJuice = new Button();
+            btnEnergy = new Button();
+            btnMDew = new Button();
+            btnGatorade = new Button();
+            btnCola = new Button();
+            btnWater = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxWater).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -285,11 +291,77 @@
             lblJuice.TabIndex = 25;
             lblJuice.Text = "Juice";
             // 
+            // btnJuice
+            // 
+            btnJuice.Location = new Point(1047, 374);
+            btnJuice.Name = "btnJuice";
+            btnJuice.Size = new Size(98, 23);
+            btnJuice.TabIndex = 48;
+            btnJuice.Text = "Add to Cart";
+            btnJuice.UseVisualStyleBackColor = true;
+            btnJuice.Click += btnJuice_Click;
+            // 
+            // btnEnergy
+            // 
+            btnEnergy.Location = new Point(843, 374);
+            btnEnergy.Name = "btnEnergy";
+            btnEnergy.Size = new Size(98, 23);
+            btnEnergy.TabIndex = 49;
+            btnEnergy.Text = "Add to Cart";
+            btnEnergy.UseVisualStyleBackColor = true;
+            btnEnergy.Click += btnEnergy_Click;
+            // 
+            // btnMDew
+            // 
+            btnMDew.Location = new Point(637, 374);
+            btnMDew.Name = "btnMDew";
+            btnMDew.Size = new Size(98, 23);
+            btnMDew.TabIndex = 50;
+            btnMDew.Text = "Add to Cart";
+            btnMDew.UseVisualStyleBackColor = true;
+            btnMDew.Click += btnMDew_Click;
+            // 
+            // btnGatorade
+            // 
+            btnGatorade.Location = new Point(438, 374);
+            btnGatorade.Name = "btnGatorade";
+            btnGatorade.Size = new Size(98, 23);
+            btnGatorade.TabIndex = 51;
+            btnGatorade.Text = "Add to Cart";
+            btnGatorade.UseVisualStyleBackColor = true;
+            btnGatorade.Click += btnGatorade_Click;
+            // 
+            // btnCola
+            // 
+            btnCola.Location = new Point(235, 374);
+            btnCola.Name = "btnCola";
+            btnCola.Size = new Size(98, 23);
+            btnCola.TabIndex = 52;
+            btnCola.Text = "Add to Cart";
+            btnCola.UseVisualStyleBackColor = true;
+            btnCola.Click += btnCola_Click;
+            // 
+            // btnWater
+            // 
+            btnWater.Location = new Point(40, 374);
+            btnWater.Name = "btnWater";
+            btnWater.Size = new Size(98, 23);
+            btnWater.TabIndex = 53;
+            btnWater.Text = "Add to Cart";
+            btnWater.UseVisualStyleBackColor = true;
+            btnWater.Click += btnWater_Click;
+            // 
             // Tab_Drinks
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1192, 653);
+            Controls.Add(btnWater);
+            Controls.Add(btnCola);
+            Controls.Add(btnGatorade);
+            Controls.Add(btnMDew);
+            Controls.Add(btnEnergy);
+            Controls.Add(btnJuice);
             Controls.Add(lblJuice);
             Controls.Add(lblEnergy);
             Controls.Add(lblMountainDew);
@@ -352,5 +424,11 @@
         private Label lblMountainDew;
         private Label lblEnergy;
         private Label lblJuice;
+        private Button btnJuice;
+        private Button btnEnergy;
+        private Button btnMDew;
+        private Button btnGatorade;
+        private Button btnCola;
+        private Button btnWater;
     }
 }

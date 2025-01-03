@@ -33,6 +33,8 @@
             listOfItemsInCart = new ListBox();
             listOfPricesinCart = new ListBox();
             listOfQuantInCart = new ListBox();
+            clearCart = new Button();
+            toCheckout = new Button();
             SuspendLayout();
             // 
             // label1
@@ -41,7 +43,7 @@
             label1.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(547, 14);
             label1.Name = "label1";
-            label1.Size = new Size(175, 28);
+            label1.Size = new Size(175, 34);
             label1.TabIndex = 2;
             label1.Text = "Shopping Cart";
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -65,41 +67,70 @@
             // listOfItemsInCart
             // 
             listOfItemsInCart.BackColor = SystemColors.AppWorkspace;
+            listOfItemsInCart.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listOfItemsInCart.FormattingEnabled = true;
-            listOfItemsInCart.ItemHeight = 15;
-            listOfItemsInCart.Location = new Point(219, 254);
+            listOfItemsInCart.ItemHeight = 21;
+            listOfItemsInCart.Location = new Point(168, 254);
             listOfItemsInCart.Name = "listOfItemsInCart";
-            listOfItemsInCart.Size = new Size(198, 184);
+            listOfItemsInCart.Size = new Size(249, 172);
             listOfItemsInCart.TabIndex = 4;
             listOfItemsInCart.SelectedIndexChanged += listOfItemsInCart_SelectedIndexChanged;
             // 
             // listOfPricesinCart
             // 
             listOfPricesinCart.BackColor = SystemColors.AppWorkspace;
+            listOfPricesinCart.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listOfPricesinCart.FormattingEnabled = true;
-            listOfPricesinCart.ItemHeight = 15;
+            listOfPricesinCart.ItemHeight = 21;
             listOfPricesinCart.Location = new Point(423, 254);
             listOfPricesinCart.Name = "listOfPricesinCart";
-            listOfPricesinCart.Size = new Size(76, 184);
+            listOfPricesinCart.Size = new Size(118, 172);
             listOfPricesinCart.TabIndex = 6;
             listOfPricesinCart.SelectedIndexChanged += listOfPricesinCart_SelectedIndexChanged;
             // 
             // listOfQuantInCart
             // 
             listOfQuantInCart.BackColor = SystemColors.AppWorkspace;
+            listOfQuantInCart.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listOfQuantInCart.FormattingEnabled = true;
-            listOfQuantInCart.ItemHeight = 15;
-            listOfQuantInCart.Location = new Point(505, 254);
+            listOfQuantInCart.ItemHeight = 21;
+            listOfQuantInCart.Location = new Point(547, 254);
             listOfQuantInCart.Name = "listOfQuantInCart";
-            listOfQuantInCart.Size = new Size(76, 184);
+            listOfQuantInCart.Size = new Size(81, 172);
             listOfQuantInCart.TabIndex = 7;
             listOfQuantInCart.SelectedIndexChanged += listOfQuantInCart_SelectedIndexChanged;
+            // 
+            // clearCart
+            // 
+            clearCart.BackColor = Color.RosyBrown;
+            clearCart.Font = new Font("Segoe UI", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            clearCart.Location = new Point(651, 251);
+            clearCart.Name = "clearCart";
+            clearCart.Size = new Size(144, 63);
+            clearCart.TabIndex = 8;
+            clearCart.Text = "CLEAR CART";
+            clearCart.UseVisualStyleBackColor = false;
+            clearCart.Click += clearCart_Click;
+            // 
+            // toCheckout
+            // 
+            toCheckout.BackColor = Color.YellowGreen;
+            toCheckout.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            toCheckout.Location = new Point(651, 323);
+            toCheckout.Name = "toCheckout";
+            toCheckout.Size = new Size(144, 103);
+            toCheckout.TabIndex = 9;
+            toCheckout.Text = "CHECKOUT";
+            toCheckout.UseVisualStyleBackColor = false;
+            toCheckout.Click += toCheckout_Click;
             // 
             // tab_ShopingCart
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1192, 653);
+            Controls.Add(toCheckout);
+            Controls.Add(clearCart);
             Controls.Add(listOfQuantInCart);
             Controls.Add(listOfPricesinCart);
             Controls.Add(listOfItemsInCart);
@@ -123,5 +154,7 @@
         private ListBox listOfItemsInCart;
         private ListBox listOfPricesinCart;
         private ListBox listOfQuantInCart;
+        private Button clearCart;
+        private Button toCheckout;
     }
 }

@@ -49,6 +49,12 @@
             lblBellPepper = new Label();
             lblCarrots = new Label();
             lblCabbage = new Label();
+            btnEggs = new Button();
+            btnCarrots = new Button();
+            btnCabbage = new Button();
+            btnBPepper = new Button();
+            btnApples = new Button();
+            btnLettuce = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxCabbage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxCarrots).BeginInit();
@@ -285,11 +291,77 @@
             lblCabbage.TabIndex = 26;
             lblCabbage.Text = "Cabbage";
             // 
+            // btnEggs
+            // 
+            btnEggs.Location = new Point(1031, 369);
+            btnEggs.Name = "btnEggs";
+            btnEggs.Size = new Size(98, 23);
+            btnEggs.TabIndex = 54;
+            btnEggs.Text = "Add to Cart";
+            btnEggs.UseVisualStyleBackColor = true;
+            btnEggs.Click += btnEggs_Click;
+            // 
+            // btnCarrots
+            // 
+            btnCarrots.Location = new Point(843, 369);
+            btnCarrots.Name = "btnCarrots";
+            btnCarrots.Size = new Size(98, 23);
+            btnCarrots.TabIndex = 55;
+            btnCarrots.Text = "Add to Cart";
+            btnCarrots.UseVisualStyleBackColor = true;
+            btnCarrots.Click += btnCarrots_Click;
+            // 
+            // btnCabbage
+            // 
+            btnCabbage.Location = new Point(645, 369);
+            btnCabbage.Name = "btnCabbage";
+            btnCabbage.Size = new Size(98, 23);
+            btnCabbage.TabIndex = 56;
+            btnCabbage.Text = "Add to Cart";
+            btnCabbage.UseVisualStyleBackColor = true;
+            btnCabbage.Click += btnCabbage_Click;
+            // 
+            // btnBPepper
+            // 
+            btnBPepper.Location = new Point(452, 369);
+            btnBPepper.Name = "btnBPepper";
+            btnBPepper.Size = new Size(98, 23);
+            btnBPepper.TabIndex = 57;
+            btnBPepper.Text = "Add to Cart";
+            btnBPepper.UseVisualStyleBackColor = true;
+            btnBPepper.Click += btnBPepper_Click;
+            // 
+            // btnApples
+            // 
+            btnApples.Location = new Point(245, 369);
+            btnApples.Name = "btnApples";
+            btnApples.Size = new Size(98, 23);
+            btnApples.TabIndex = 58;
+            btnApples.Text = "Add to Cart";
+            btnApples.UseVisualStyleBackColor = true;
+            btnApples.Click += btnApples_Click;
+            // 
+            // btnLettuce
+            // 
+            btnLettuce.Location = new Point(43, 369);
+            btnLettuce.Name = "btnLettuce";
+            btnLettuce.Size = new Size(98, 23);
+            btnLettuce.TabIndex = 59;
+            btnLettuce.Text = "Add to Cart";
+            btnLettuce.UseVisualStyleBackColor = true;
+            btnLettuce.Click += btnLettuce_Click;
+            // 
             // Tab_Produce
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1192, 653);
+            Controls.Add(btnLettuce);
+            Controls.Add(btnApples);
+            Controls.Add(btnBPepper);
+            Controls.Add(btnCabbage);
+            Controls.Add(btnCarrots);
+            Controls.Add(btnEggs);
             Controls.Add(lblCabbage);
             Controls.Add(lblCarrots);
             Controls.Add(lblBellPepper);
@@ -352,5 +424,11 @@
         private Label lblBellPepper;
         private Label lblCarrots;
         private Label lblCabbage;
+        private Button btnEggs;
+        private Button btnCarrots;
+        private Button btnCabbage;
+        private Button btnBPepper;
+        private Button btnApples;
+        private Button btnLettuce;
     }
 }

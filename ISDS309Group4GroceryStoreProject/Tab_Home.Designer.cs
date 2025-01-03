@@ -37,6 +37,13 @@
             tabBakery = new Button();
             button1 = new Button();
             addToCartTest = new Button();
+            btnBeefTri = new Button();
+            btnCoffee = new Button();
+            btnWhiskey = new Button();
+            btnMilkG = new Button();
+            btnCandyVar = new Button();
+            btnSodaVar = new Button();
+            btnCarrots = new Button();
             SuspendLayout();
             // 
             // tabMeat
@@ -147,6 +154,76 @@
             addToCartTest.UseVisualStyleBackColor = true;
             addToCartTest.Click += addToCartTest_Click;
             // 
+            // btnBeefTri
+            // 
+            btnBeefTri.Location = new Point(386, 364);
+            btnBeefTri.Name = "btnBeefTri";
+            btnBeefTri.Size = new Size(98, 23);
+            btnBeefTri.TabIndex = 11;
+            btnBeefTri.Text = "Add to Cart";
+            btnBeefTri.UseVisualStyleBackColor = true;
+            btnBeefTri.Click += btnBeefTri_Click;
+            // 
+            // btnCoffee
+            // 
+            btnCoffee.Location = new Point(671, 364);
+            btnCoffee.Name = "btnCoffee";
+            btnCoffee.Size = new Size(98, 23);
+            btnCoffee.TabIndex = 12;
+            btnCoffee.Text = "Add to Cart";
+            btnCoffee.UseVisualStyleBackColor = true;
+            btnCoffee.Click += btnCoffee_Click;
+            // 
+            // btnWhiskey
+            // 
+            btnWhiskey.Location = new Point(989, 364);
+            btnWhiskey.Name = "btnWhiskey";
+            btnWhiskey.Size = new Size(98, 23);
+            btnWhiskey.TabIndex = 13;
+            btnWhiskey.Text = "Add to Cart";
+            btnWhiskey.UseVisualStyleBackColor = true;
+            btnWhiskey.Click += btnWhiskey_Click;
+            // 
+            // btnMilkG
+            // 
+            btnMilkG.Location = new Point(100, 578);
+            btnMilkG.Name = "btnMilkG";
+            btnMilkG.Size = new Size(98, 23);
+            btnMilkG.TabIndex = 14;
+            btnMilkG.Text = "Add to Cart";
+            btnMilkG.UseVisualStyleBackColor = true;
+            btnMilkG.Click += btnMilkG_Click;
+            // 
+            // btnCandyVar
+            // 
+            btnCandyVar.Location = new Point(386, 578);
+            btnCandyVar.Name = "btnCandyVar";
+            btnCandyVar.Size = new Size(98, 23);
+            btnCandyVar.TabIndex = 15;
+            btnCandyVar.Text = "Add to Cart";
+            btnCandyVar.UseVisualStyleBackColor = true;
+            btnCandyVar.Click += btnCandyVar_Click;
+            // 
+            // btnSodaVar
+            // 
+            btnSodaVar.Location = new Point(989, 578);
+            btnSodaVar.Name = "btnSodaVar";
+            btnSodaVar.Size = new Size(98, 23);
+            btnSodaVar.TabIndex = 16;
+            btnSodaVar.Text = "Add to Cart";
+            btnSodaVar.UseVisualStyleBackColor = true;
+            btnSodaVar.Click += btnSodaVar_Click;
+            // 
+            // btnCarrots
+            // 
+            btnCarrots.Location = new Point(671, 578);
+            btnCarrots.Name = "btnCarrots";
+            btnCarrots.Size = new Size(98, 23);
+            btnCarrots.TabIndex = 17;
+            btnCarrots.Text = "Add to Cart";
+            btnCarrots.UseVisualStyleBackColor = true;
+            btnCarrots.Click += btnCarrots_Click;
+            // 
             // Tab_Home
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -154,6 +231,13 @@
             BackgroundImage = Properties.Resources.homepage;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(1192, 653);
+            Controls.Add(btnCarrots);
+            Controls.Add(btnSodaVar);
+            Controls.Add(btnCandyVar);
+            Controls.Add(btnMilkG);
+            Controls.Add(btnWhiskey);
+            Controls.Add(btnCoffee);
+            Controls.Add(btnBeefTri);
             Controls.Add(addToCartTest);
             Controls.Add(button1);
             Controls.Add(tabDrinks);
@@ -187,5 +271,12 @@
         private Button tabBakery;
         private Button button1;
         private Button addToCartTest;
+        private Button btnBeefTri;
+        private Button btnCoffee;
+        private Button btnWhiskey;
+        private Button btnMilkG;
+        private Button btnCandyVar;
+        private Button btnSodaVar;
+        private Button btnCarrots;
     }
 }

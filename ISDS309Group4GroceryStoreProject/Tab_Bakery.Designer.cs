@@ -49,6 +49,12 @@
             lblCake = new Label();
             lblWheatB = new Label();
             lblWhiteB = new Label();
+            btnCake = new Button();
+            btnAppleP = new Button();
+            btnCookies = new Button();
+            btnFlour = new Button();
+            btnWheatB = new Button();
+            btnWhiteB = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxCookies).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxPie).BeginInit();
@@ -285,11 +291,77 @@
             lblWhiteB.TabIndex = 39;
             lblWhiteB.Text = "White Bread";
             // 
+            // btnCake
+            // 
+            btnCake.Location = new Point(1045, 388);
+            btnCake.Name = "btnCake";
+            btnCake.Size = new Size(98, 23);
+            btnCake.TabIndex = 42;
+            btnCake.Text = "Add to Cart";
+            btnCake.UseVisualStyleBackColor = true;
+            btnCake.Click += btnCake_Click;
+            // 
+            // btnAppleP
+            // 
+            btnAppleP.Location = new Point(844, 388);
+            btnAppleP.Name = "btnAppleP";
+            btnAppleP.Size = new Size(98, 23);
+            btnAppleP.TabIndex = 43;
+            btnAppleP.Text = "Add to Cart";
+            btnAppleP.UseVisualStyleBackColor = true;
+            btnAppleP.Click += btnAppleP_Click;
+            // 
+            // btnCookies
+            // 
+            btnCookies.Location = new Point(641, 388);
+            btnCookies.Name = "btnCookies";
+            btnCookies.Size = new Size(98, 23);
+            btnCookies.TabIndex = 44;
+            btnCookies.Text = "Add to Cart";
+            btnCookies.UseVisualStyleBackColor = true;
+            btnCookies.Click += btnCookies_Click;
+            // 
+            // btnFlour
+            // 
+            btnFlour.Location = new Point(447, 388);
+            btnFlour.Name = "btnFlour";
+            btnFlour.Size = new Size(98, 23);
+            btnFlour.TabIndex = 45;
+            btnFlour.Text = "Add to Cart";
+            btnFlour.UseVisualStyleBackColor = true;
+            btnFlour.Click += btnFlour_Click;
+            // 
+            // btnWheatB
+            // 
+            btnWheatB.Location = new Point(244, 388);
+            btnWheatB.Name = "btnWheatB";
+            btnWheatB.Size = new Size(98, 23);
+            btnWheatB.TabIndex = 46;
+            btnWheatB.Text = "Add to Cart";
+            btnWheatB.UseVisualStyleBackColor = true;
+            btnWheatB.Click += btnWheatB_Click;
+            // 
+            // btnWhiteB
+            // 
+            btnWhiteB.Location = new Point(47, 388);
+            btnWhiteB.Name = "btnWhiteB";
+            btnWhiteB.Size = new Size(98, 23);
+            btnWhiteB.TabIndex = 47;
+            btnWhiteB.Text = "Add to Cart";
+            btnWhiteB.UseVisualStyleBackColor = true;
+            btnWhiteB.Click += btnWhiteB_Click;
+            // 
             // Tab_Bakery
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1192, 653);
+            Controls.Add(btnWhiteB);
+            Controls.Add(btnWheatB);
+            Controls.Add(btnFlour);
+            Controls.Add(btnCookies);
+            Controls.Add(btnAppleP);
+            Controls.Add(btnCake);
             Controls.Add(lblWhiteB);
             Controls.Add(lblWheatB);
             Controls.Add(lblCake);
@@ -352,5 +424,11 @@
         private Label lblCake;
         private Label lblWheatB;
         private Label lblWhiteB;
+        private Button btnCake;
+        private Button btnAppleP;
+        private Button btnCookies;
+        private Button btnFlour;
+        private Button btnWheatB;
+        private Button btnWhiteB;
     }
 }
